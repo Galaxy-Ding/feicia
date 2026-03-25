@@ -1,0 +1,15 @@
+project/
+├── Product-Spec.md                      # 产品需求文档（需求收集后生成）
+├── Product-Spec-CHANGELOG.md            # 需求变更记录（迭代时生成）
+├── [从 AI Studio 下载的代码文件]         # 项目源代码
+│   └── ...
+└── .claude/
+    ├── CLAUDE.md                        # 项目规则和主Agent配置（必须创建）
+    └── skills/
+        └── product-spec-builder/        # 产品经理技能包（必须创建）
+            ├── SKILL.md                 # 技能包核心配置
+            ├── reference.md             # Google AI Studio 能力清单
+            └── templates/               # 文档格式模板
+                ├── product-spec-template.md
+                ├── system-prompt-template.md
+                └── changelog-template.md
