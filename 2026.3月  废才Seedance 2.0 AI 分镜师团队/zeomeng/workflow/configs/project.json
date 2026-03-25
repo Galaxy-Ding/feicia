@@ -1,0 +1,24 @@
+{
+  "project_name": "即梦 2.0 浏览器自动化项目一期",
+  "jimeng_url": "https://jimeng.jianying.com/",
+  "profile_path": "state/browser/mock-profile",
+  "selectors_path": "workflow/selectors/jimeng-image-page.json",
+  "prompt_path": "workflow/prompts/sample-prompts.json",
+  "staging_root": "downloads/staging",
+  "images_root": "downloads/images",
+  "run_log_dir": "logs/runs",
+  "error_log_dir": "logs/errors",
+  "task_state_dir": "state/tasks",
+  "browser_state_dir": "state/browser",
+  "batch_id": "img001",
+  "wait_timeout_seconds": 600,
+  "poll_interval_seconds": 5,
+  "download_stable_checks": 3,
+  "max_slug_length": 48,
+  "images_per_prompt": 4,
+  "login_markers": [
+    "头像",
+    "创作中心",
+    "图片生成"
+  ]
+}

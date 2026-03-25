@@ -63,6 +63,41 @@ class TestSecurity(unittest.TestCase):
             self.assertEqual(config.provider_name_for_model("director_generate"), "default")
             self.assertEqual(config.api_settings_for_model("director_generate").api_key_env, payload["api"]["api_key_env"])
 
+    def test_plaintext_api_key_in_project_config_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            source_root = Path(__file__).resolve().parents[1]
+            shutil.copy2(source_root / "project-config.json", root / "project-config.json")
+            payload = json.loads((root / "project-config.json").read_text(encoding="utf-8"))
+            payload["providers"]["codex"]["api_key_env"] = "sk-plaintext-test"
+            (root / "project-config.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+            with self.assertRaises(ValueError):
+                load_config(root)
+
+    def test_local_secret_override_file_is_supported(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            source_root = Path(__file__).resolve().parents[1]
+            shutil.copy2(source_root / "project-config.json", root / "project-config.json")
+            overrides = {
+                "providers": {
+                    "codex": {
+                        "base_url": "http://override.example.com/v1",
+                        "api_key": "sk-local-override",
+                    }
+                }
+            }
+            (root / "project-config.local.json").write_text(
+                json.dumps(overrides, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+
+            config = load_config(root)
+            provider = config.api_settings_for_model("director_generate")
+            self.assertEqual(provider.base_url, "http://override.example.com/v1")
+            self.assertEqual(provider.api_key, "sk-local-override")
+
 
 if __name__ == "__main__":
     unittest.main()

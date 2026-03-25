@@ -5,6 +5,7 @@ import os
 import urllib.request
 from dataclasses import dataclass
 from typing import Protocol
+from urllib.parse import urlsplit, urlunsplit
 
 from .models import ApiSettings, ModelSettings
 
@@ -20,7 +21,10 @@ class OpenAICompatibleClient:
     def chat(self, model: ModelSettings, messages: list[dict[str, str]]) -> str:
         api_key = self._resolve_api_key()
         if not api_key:
-            raise RuntimeError(f"Missing API key env: {self.settings.api_key_env}")
+            raise RuntimeError(
+                f"Missing API key for provider. Set env {self.settings.api_key_env} "
+                f"or provide api_key in project-config.local.json."
+            )
 
         if self.settings.wire_api == "responses":
             return self._responses_api(api_key, model, messages)
@@ -35,7 +39,7 @@ class OpenAICompatibleClient:
         }
         body = json.dumps(payload).encode("utf-8")
         request = urllib.request.Request(
-            url=f"{self.settings.base_url.rstrip('/')}/chat/completions",
+            url=f"{normalize_openai_base_url(self.settings.base_url).rstrip('/')}/chat/completions",
             method="POST",
             data=body,
             headers={
@@ -63,7 +67,7 @@ class OpenAICompatibleClient:
         }
         body = json.dumps(payload).encode("utf-8")
         request = urllib.request.Request(
-            url=f"{self.settings.base_url.rstrip('/')}/responses",
+            url=f"{normalize_openai_base_url(self.settings.base_url).rstrip('/')}/responses",
             method="POST",
             data=body,
             headers={
@@ -90,15 +94,23 @@ class OpenAICompatibleClient:
         raise RuntimeError("Responses API returned no text output")
 
     def _resolve_api_key(self) -> str | None:
+        if self.settings.api_key.strip():
+            return self.settings.api_key.strip()
+
         key_or_env = self.settings.api_key_env.strip()
         api_key = os.environ.get(key_or_env)
         if api_key:
             return api_key
-
-        # Backward compatibility: some local configs store the raw key here.
-        if key_or_env.startswith(("sk-", "sk_", "sess-")):
-            return key_or_env
         return None
+
+
+def normalize_openai_base_url(base_url: str) -> str:
+    parsed = urlsplit(base_url.strip())
+    path = parsed.path.rstrip("/")
+    if not path:
+        path = "/v1"
+    normalized = parsed._replace(path=path)
+    return urlunsplit(normalized)
 
 
 class RoutedOpenAICompatibleClient:

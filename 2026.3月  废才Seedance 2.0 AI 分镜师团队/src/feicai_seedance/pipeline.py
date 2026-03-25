@@ -16,6 +16,7 @@ from .assessment_store import (
     save_stage_assessment_report,
 )
 from .acceptance_store import get_stage_status, save_stage_acceptance
+from .acceptance_runner import generate_acceptance_evidence
 from .artifact_utils import (
     has_episode_block,
     read_episode_block,
@@ -230,6 +231,7 @@ class Pipeline:
             "- revise <ep01> <director|art|storyboard> <feedback>\n"
             "- review <ep01> <director|design|prompt|all>\n"
             "- accept <ep01> <director|design|prompt|all>\n"
+            "- acceptance-evidence <ep01>\n"
             "- help"
         )
 
@@ -300,6 +302,16 @@ class Pipeline:
         if len(stages) > 1:
             outputs.append(f"episode_review={overview_path}")
         return "\n\n".join(outputs)
+
+    def run_acceptance_evidence(self, episode: str) -> str:
+        target = sanitize_episode_id(episode)
+        payload = generate_acceptance_evidence(self.project_root, target)
+        return (
+            f"{target} acceptance evidence generated.\n"
+            f"result={payload['result']}\n"
+            f"missing_items={len(payload['missing_items'])}\n"
+            f"evidence_report={payload['markdown_path']}"
+        )
 
     def _resolve_episode(self, episode: str | None) -> str:
         if episode:

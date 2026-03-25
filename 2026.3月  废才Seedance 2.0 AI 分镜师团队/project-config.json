@@ -7,7 +7,7 @@
   "api": {
     "provider": "openai-compatible",
     "base_url": "http://2000.run:6543",
-    "api_key_env": "sk-JWbgasvGsdbshaWQ9yhahcFUheuMpcEwORJQgQbyaPXzw0Tq",
+    "api_key_env": "CCSWITCH_DEFAULT_API_KEY",
     "timeout_seconds": 300,
     "max_retries": 3,
     "wire_api": "responses"
@@ -16,7 +16,7 @@
     "codex": {
       "provider": "openai-compatible",
       "base_url": "http://2000.run:6543",
-      "api_key_env": "sk-JWbgasvGsdbshaWQ9yhahcFUheuMpcEwORJQgQbyaPXzw0Tq",
+      "api_key_env": "CCSWITCH_CODEX_API_KEY",
       "timeout_seconds": 300,
       "max_retries": 3,
       "wire_api": "responses"
@@ -24,7 +24,7 @@
     "claude": {
       "provider": "openai-compatible",
       "base_url": "http://2000.run:6543",
-      "api_key_env": "sk-rqx47ecucHGz06jGgXvxWaeyN8J31WqvQoMafabPQsK1vT2b",
+      "api_key_env": "CCSWITCH_CLAUDE_API_KEY",
       "timeout_seconds": 300,
       "max_retries": 3,
       "wire_api": "responses"

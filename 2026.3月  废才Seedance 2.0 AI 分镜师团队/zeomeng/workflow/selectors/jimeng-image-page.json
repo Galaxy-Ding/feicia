@@ -1,0 +1,46 @@
+{
+  "elements": [
+    {
+      "name": "image_generation_entry",
+      "primary_selector": "button:has-text('图片生成')",
+      "fallback_selectors": [
+        "[role='button'][aria-label*='图片']",
+        "text=AI作图"
+      ],
+      "match_text": "图片生成",
+      "timeout_seconds": 15,
+      "notes": "优先通过显式文案定位"
+    },
+    {
+      "name": "prompt_input",
+      "primary_selector": "textarea[placeholder*='提示词']",
+      "fallback_selectors": [
+        "[contenteditable='true']",
+        "textarea"
+      ],
+      "match_text": "提示词",
+      "timeout_seconds": 10,
+      "notes": "输入前先清空旧内容"
+    },
+    {
+      "name": "generate_button",
+      "primary_selector": "button:has-text('生成')",
+      "fallback_selectors": [
+        "[role='button'][aria-label*='生成']"
+      ],
+      "match_text": "生成",
+      "timeout_seconds": 10,
+      "notes": "提交后进入等待状态"
+    },
+    {
+      "name": "download_button",
+      "primary_selector": "button:has-text('下载')",
+      "fallback_selectors": [
+        "[role='button'][aria-label*='下载']"
+      ],
+      "match_text": "下载",
+      "timeout_seconds": 10,
+      "notes": "出现即视为可下载"
+    }
+  ]
+}

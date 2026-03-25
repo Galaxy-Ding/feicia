@@ -21,6 +21,7 @@ class ApiSettings:
     timeout_seconds: int
     max_retries: int
     wire_api: str = "chat_completions"
+    api_key: str = ""
 
 
 @dataclass(slots=True)

@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+
+downloads/staging/*
+downloads/images/*
+logs/runs/*
+logs/errors/*
+state/tasks/*
+
+!downloads/staging/.gitkeep
+!downloads/images/.gitkeep
+!logs/runs/.gitkeep
+!logs/errors/.gitkeep
+!state/tasks/.gitkeep

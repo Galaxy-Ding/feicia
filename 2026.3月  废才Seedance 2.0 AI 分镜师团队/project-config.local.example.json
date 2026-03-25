@@ -1,0 +1,12 @@
+{
+  "providers": {
+    "codex": {
+      "base_url": "http://120.27.1xx.x:6543/v1",
+      "api_key": "sk-example-codex"
+    },
+    "claude": {
+      "base_url": "http://120.27.1xx.x:6543/v1",
+      "api_key": "sk-example-claude"
+    }
+  }
+}

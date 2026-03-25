@@ -37,25 +37,33 @@
 - [x] 业务审核 JSON 完整
 - [x] 合规审核 JSON 完整
 - [x] 自动接受逻辑严格执行平均分和单项阈值
-- [x] FAIL 问题含位置、问题、修订方向、优先级
+- [x] FAIL 问题包含位置、问题、修订方向、优先级
 - [x] 两步审核反馈可一次性合并
 
 ## 5. 会话与追踪
 
-- [x] session history 真正参与调用
+- [x] Session history 真正参与调用
 - [x] 同 episode 多轮修订有历史延续
 - [x] 多 episode 状态互不污染
 - [x] 产物能追踪到资产和审核轮次
 
-## 6. 测试
+## 6. 验收收口
+
+- [x] `acceptance-evidence <ep>` 可生成最终证据报告
+- [ ] 黄金样例目录已补齐并通过 `acceptance-evidence`
+- [ ] 变体样例目录已补齐并通过 `acceptance-evidence`
+
+## 7. 测试
 
 - [x] 单元测试通过
 - [x] 集成测试通过
 - [x] 负例测试通过
-- [ ] 黄金样例验收通过
+- [x] 当前自动化回归为 `54 passed`
 
-## 7. 安全与配置
+## 8. 安全与配置
 
-- [ ] 默认不接受明文 API Key
+- [x] 默认不接受明文 API Key 写入 `project-config.json`
+- [x] 支持 `project-config.local.json` 本地覆写 API Key
+- [x] OpenAI 兼容基址自动规范到 `/v1`
 - [x] 路径安全测试通过
 - [x] 输出目录结构符合设计
