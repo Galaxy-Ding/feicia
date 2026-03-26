@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 
 from .browser.mock import MockBrowserOperator
+from .browser.openclaw import OpenClawBrowserOperator
+from .config import load_app_config
 from .orchestrator import RunOrchestrator
 
 
@@ -21,8 +23,13 @@ def build_parser() -> argparse.ArgumentParser:
     run_parser.add_argument(
         "--browser",
         default="mock",
-        choices=["mock"],
+        choices=["mock", "openclaw"],
         help="浏览器适配器",
+    )
+    run_parser.add_argument(
+        "--browser-profile",
+        default=None,
+        help="OpenClaw 浏览器 profile 名称，未指定时使用配置文件",
     )
     return parser
 
@@ -32,8 +39,15 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.command == "run":
-        browser = MockBrowserOperator()
-        orchestrator = RunOrchestrator.from_path(Path(args.config), browser)
+        config_path = Path(args.config)
+        config = load_app_config(config_path)
+        if args.browser == "mock":
+            browser = MockBrowserOperator()
+        else:
+            browser = OpenClawBrowserOperator(
+                browser_profile=args.browser_profile or config.openclaw_browser_profile,
+            )
+        orchestrator = RunOrchestrator(config, browser)
         summary = orchestrator.run()
         print(json.dumps(summary.to_dict(), ensure_ascii=False, indent=2))
         return 0

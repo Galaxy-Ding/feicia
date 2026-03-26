@@ -25,6 +25,7 @@ class AppConfig:
     base_dir: Path
     project_name: str
     jimeng_url: str
+    generation_url: str
     profile_path: Path
     selectors_path: Path
     prompt_path: Path
@@ -40,6 +41,7 @@ class AppConfig:
     download_stable_checks: int
     max_slug_length: int
     images_per_prompt: int
+    openclaw_browser_profile: str = "openclaw"
     login_markers: List[str] = field(default_factory=list)
 
 

@@ -8,7 +8,8 @@ from .models import AppConfig
 
 
 def safe_join_within(base_dir: Path, relative_path: str) -> Path:
-    candidate = (base_dir / relative_path).resolve()
+    normalized_relative_path = relative_path.replace("\\", "/")
+    candidate = (base_dir / normalized_relative_path).resolve()
     resolved_base = base_dir.resolve()
     if candidate != resolved_base and resolved_base not in candidate.parents:
         raise ValueError(f"Path escapes workspace: {relative_path}")
@@ -29,6 +30,7 @@ def load_app_config(path: Path) -> AppConfig:
         base_dir=base_dir,
         project_name=raw["project_name"],
         jimeng_url=raw["jimeng_url"],
+        generation_url=raw.get("generation_url", "https://jimeng.jianying.com/ai-tool/image/generate"),
         profile_path=safe_join_within(base_dir, raw["profile_path"]),
         selectors_path=safe_join_within(base_dir, raw["selectors_path"]),
         prompt_path=safe_join_within(base_dir, raw["prompt_path"]),
@@ -44,6 +46,7 @@ def load_app_config(path: Path) -> AppConfig:
         download_stable_checks=int(raw["download_stable_checks"]),
         max_slug_length=int(raw["max_slug_length"]),
         images_per_prompt=int(raw["images_per_prompt"]),
+        openclaw_browser_profile=raw.get("openclaw_browser_profile", "openclaw"),
         login_markers=list(raw.get("login_markers", [])),
     )
 

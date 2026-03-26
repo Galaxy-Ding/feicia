@@ -2,7 +2,7 @@
 
 ## 1. 测试目标
 
-验证一期自动化流程在当前机器边界内，能够稳定完成“配置加载、提示词读取、状态追踪、模拟生成、下载归档、重命名、日志记录”闭环，并为后续真实浏览器接入保留可验证接口。
+验证一期自动化流程能够稳定完成“配置加载、提示词读取、真实图片页定位、提示词提交、生成等待、下载归档、重命名、日志记录”闭环，并完成 OpenClaw 真实浏览器验收。
 
 ## 2. 测试范围
 
@@ -14,6 +14,7 @@
 - 日志脱敏
 - 任务状态持久化
 - 模拟浏览器端到端流程
+- OpenClaw 浏览器命令封装、快照解析与下载接口
 - 安全边界校验
 
 ## 3. 测试类型
@@ -61,23 +62,33 @@
 | `tests/test_logging_utils.py` | 单元 / 安全 | 日志脱敏与摘要输出 |
 | `tests/test_state_store.py` | 单元 | 状态文件读写 |
 | `tests/test_orchestrator.py` | 功能 / 集成 | 端到端成功与失败流程 |
+| `tests/test_openclaw_browser_operator.py` | 单元 / 功能 | OpenClaw 命令拼装、快照解析、提交与下载接口 |
 | `tests/test_security.py` | 安全 | 路径穿越与凭证泄漏拦截 |
 
 ## 5. 当前测试结果
 
-执行时间：`2026-03-25`
+执行时间：`2026-03-26`
 
 执行命令：
 
 ```bash
-pytest
+python3 -m pytest
+python3 run_pipeline.py run --browser mock
+python3 run_pipeline.py run --config workflow/configs/project-smoke.json --browser openclaw
+python3 run_pipeline.py run --config workflow/configs/project-batch.json --browser openclaw
+python3 run_pipeline.py run --config workflow/configs/project-acceptance.json --browser openclaw
 ```
 
 执行结果：
 
-- 总计 `13` 项测试
-- 通过 `13`
+- 总计 `17` 项测试
+- 通过 `17`
 - 失败 `0`
+- `mock` 链路执行成功，结果为 `COMPLETED`
+- `openclaw` 烟雾批次执行成功，结果为 `COMPLETED`
+- `openclaw` 3 条小批量执行成功，结果为 `COMPLETED`
+- `openclaw` 正式验收批次执行成功，结果为 `COMPLETED`
+- 真实环境已验证 `ProseMirror contenteditable` 输入、提交、等待、下载、映射、状态和日志闭环
 
 ## 6. 通过准则
 
@@ -85,3 +96,5 @@ pytest
 - 单元核心函数具备至少 3 组随机样例
 - 功能、集成、安全测试全部通过
 - 本地模拟链路完整产生日志、状态、映射和下载结果
+- 真实 OpenClaw 链路必须通过 smoke / 3 条 batch / acceptance 三类批次
+- 真实运行必须产出图片文件、映射 JSONL、任务状态文件和运行日志

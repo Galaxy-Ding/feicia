@@ -69,6 +69,7 @@ def create_temp_project(tmp_path: Path, prompt_name: str, prompts: Iterable[str]
     config = {
         "project_name": "即梦 2.0 浏览器自动化项目一期",
         "jimeng_url": "https://jimeng.jianying.com/",
+        "generation_url": "https://jimeng.jianying.com/ai-tool/image/generate",
         "profile_path": "state/browser/mock-profile",
         "selectors_path": "workflow/selectors/jimeng-image-page.json",
         "prompt_path": f"workflow/prompts/{prompt_name}",
@@ -84,6 +85,7 @@ def create_temp_project(tmp_path: Path, prompt_name: str, prompts: Iterable[str]
         "download_stable_checks": 1,
         "max_slug_length": 48,
         "images_per_prompt": 4,
+        "openclaw_browser_profile": "openclaw",
         "login_markers": ["头像", "创作中心", "图片生成"],
     }
     config_path = tmp_path / "workflow" / "configs" / "project.json"
