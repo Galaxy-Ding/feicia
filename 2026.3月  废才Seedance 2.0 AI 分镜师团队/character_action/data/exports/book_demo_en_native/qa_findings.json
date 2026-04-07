@@ -1,0 +1,148 @@
+{
+  "run_id": "book_demo_en_native-20260328014657",
+  "book": {
+    "book_id": "book_demo_en_native",
+    "title": "Demo EN Native",
+    "language": "en",
+    "author": "",
+    "source_path": "data/raw_books/demo_en.txt",
+    "chapter_count": 2
+  },
+  "findings": [
+    {
+      "finding_id": "qa_000001",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "character_evidence_gap",
+      "severity": "medium",
+      "target_type": "character",
+      "target_id": "char_000002",
+      "reason_codes": [
+        "LOW_EVIDENCE_CHARACTER"
+      ],
+      "message": "Character char_000002 has only 1 evidence item(s).",
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0004"
+      ],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000002",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "invalid_character_name",
+      "severity": "high",
+      "target_type": "character",
+      "target_id": "char_000003",
+      "reason_codes": [
+        "PRONOUN_CANONICAL_NAME"
+      ],
+      "message": "Character char_000003 uses pronoun-like canonical_name 'her'.",
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0004"
+      ],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000003",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "character_evidence_gap",
+      "severity": "medium",
+      "target_type": "character",
+      "target_id": "char_000003",
+      "reason_codes": [
+        "LOW_EVIDENCE_CHARACTER"
+      ],
+      "message": "Character char_000003 has only 1 evidence item(s).",
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0004"
+      ],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000004",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "invalid_character_name",
+      "severity": "high",
+      "target_type": "character",
+      "target_id": "char_000005",
+      "reason_codes": [
+        "PRONOUN_CANONICAL_NAME"
+      ],
+      "message": "Character char_000005 uses pronoun-like canonical_name 'she'.",
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0006"
+      ],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000005",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "character_evidence_gap",
+      "severity": "medium",
+      "target_type": "character",
+      "target_id": "char_000005",
+      "reason_codes": [
+        "LOW_EVIDENCE_CHARACTER"
+      ],
+      "message": "Character char_000005 has only 1 evidence item(s).",
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0006"
+      ],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000006",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "character_evidence_gap",
+      "severity": "medium",
+      "target_type": "character",
+      "target_id": "char_000006",
+      "reason_codes": [
+        "LOW_EVIDENCE_CHARACTER"
+      ],
+      "message": "Character char_000006 has only 1 evidence item(s).",
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0003"
+      ],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000007",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "alias_conflict",
+      "severity": "medium",
+      "target_type": "alias",
+      "target_id": "captain",
+      "reason_codes": [
+        "ALIAS_CONFLICT"
+      ],
+      "message": "Alias 'captain' maps to multiple characters: Captain Nora, the Captain.",
+      "evidence_ids": [],
+      "status": "open"
+    },
+    {
+      "finding_id": "qa_000008",
+      "run_id": "book_demo_en_native-20260328014657",
+      "book_id": "book_demo_en_native",
+      "finding_type": "low_confidence_relation",
+      "severity": "medium",
+      "target_type": "relation",
+      "target_id": "rel_000002",
+      "reason_codes": [
+        "LOW_CONFIDENCE_RELATION"
+      ],
+      "message": "Relation rel_000002 confidence is 0.64.",
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0002",
+        "ch_0002_ck_0001_ev_0003"
+      ],
+      "status": "open"
+    }
+  ]
+}

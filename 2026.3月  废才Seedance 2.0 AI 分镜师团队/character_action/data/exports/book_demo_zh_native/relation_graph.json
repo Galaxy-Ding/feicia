@@ -1,0 +1,32 @@
+{
+  "run_id": "book_demo_zh_native-20260328012704",
+  "book": {
+    "book_id": "book_demo_zh_native",
+    "title": "Demo ZH Native",
+    "language": "zh",
+    "author": "",
+    "source_path": "data/raw_books/demo_zh.txt",
+    "chapter_count": 2
+  },
+  "relations": [
+    {
+      "relation_id": "rel_000001",
+      "book_id": "book_demo_zh_native",
+      "source_character_id": "char_000001",
+      "target_character_id": "char_000002",
+      "relation_type": "dialogue",
+      "direction": "bidirectional",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0002",
+        "ch_0001_ck_0001_ev_0003",
+        "ch_0001_ck_0001_ev_0004",
+        "ch_0001_ck_0001_ev_0005",
+        "ch_0002_ck_0001_ev_0001",
+        "ch_0002_ck_0001_ev_0002"
+      ],
+      "occurrence_count": 3,
+      "review_status": "auto_approved"
+    }
+  ]
+}

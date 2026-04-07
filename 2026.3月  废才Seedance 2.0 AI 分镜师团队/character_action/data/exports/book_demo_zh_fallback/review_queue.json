@@ -1,0 +1,19 @@
+{
+  "run_id": "book_demo_zh_fallback-20260328063626",
+  "book_id": "book_demo_zh_fallback",
+  "tasks": [
+    {
+      "task_id": "review_000001",
+      "run_id": "book_demo_zh_fallback-20260328063626",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000002",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "师父"
+      }
+    }
+  ]
+}

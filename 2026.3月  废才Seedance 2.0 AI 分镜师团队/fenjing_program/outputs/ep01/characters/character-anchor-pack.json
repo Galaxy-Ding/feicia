@@ -1,0 +1,79 @@
+{
+  "book_id": "demo-book",
+  "episode_id": "ep01",
+  "generated_at": "2026-03-27T11:22:06+08:00",
+  "characters": [
+    {
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "name": "太史局同僚",
+      "anchor_status": "ANCHOR_READY",
+      "reference_images": {
+        "front_full_body": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_half_body_v1.png"
+      },
+      "selected_visual_keywords": [
+        "东方面孔",
+        "二十五岁上下",
+        "轮廓清晰",
+        "黑发",
+        "层次服饰",
+        "角色辨识度高"
+      ],
+      "selected_accessories": [
+        "身份配件"
+      ],
+      "usable_for_storyboard": true
+    },
+    {
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "name": "守门内侍",
+      "anchor_status": "ANCHOR_READY",
+      "reference_images": {
+        "back_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/back_full_body_v1.png",
+        "front_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_half_body_v1.png",
+        "side_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/side_full_body_v1.png",
+        "turn_back_pose": "assets/library/characters/char_u5b88u95e8u5185u4f8d/turn_back_pose_v1.png",
+        "weapon_hold_pose": "assets/library/characters/char_u5b88u95e8u5185u4f8d/weapon_hold_pose_v1.png"
+      },
+      "selected_visual_keywords": [
+        "东方面孔",
+        "二十五岁上下",
+        "轮廓清晰",
+        "黑发",
+        "层次服饰",
+        "角色辨识度高"
+      ],
+      "selected_accessories": [
+        "身份配件"
+      ],
+      "usable_for_storyboard": true
+    },
+    {
+      "character_id": "char_u987eu661fu6f9c",
+      "name": "顾星澜",
+      "anchor_status": "ANCHOR_READY",
+      "reference_images": {
+        "back_full_body": "assets/library/characters/char_u987eu661fu6f9c/back_full_body_v1.png",
+        "front_full_body": "assets/library/characters/char_u987eu661fu6f9c/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u987eu661fu6f9c/front_half_body_v1.png",
+        "side_full_body": "assets/library/characters/char_u987eu661fu6f9c/side_full_body_v1.png",
+        "turn_back_pose": "assets/library/characters/char_u987eu661fu6f9c/turn_back_pose_v1.png",
+        "weapon_hold_pose": "assets/library/characters/char_u987eu661fu6f9c/weapon_hold_pose_v1.png"
+      },
+      "selected_visual_keywords": [
+        "东方面孔",
+        "二十岁上下",
+        "清瘦修长",
+        "黑发",
+        "层次服饰",
+        "角色辨识度高"
+      ],
+      "selected_accessories": [
+        "旧剑",
+        "木牌"
+      ],
+      "usable_for_storyboard": true
+    }
+  ]
+}

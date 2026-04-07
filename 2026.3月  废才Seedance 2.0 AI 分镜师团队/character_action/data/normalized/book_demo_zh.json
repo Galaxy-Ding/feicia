@@ -1,0 +1,452 @@
+{
+  "run_id": "book_demo_zh-20260327120859",
+  "book": {
+    "book_id": "book_demo_zh",
+    "title": "中文样书",
+    "language": "zh",
+    "author": "",
+    "source_path": "data/raw_books/demo_zh.txt",
+    "chapter_count": 2
+  },
+  "chapters": [
+    {
+      "chapter_id": "ch_0001",
+      "book_id": "book_demo_zh",
+      "chapter_index": 1,
+      "title": "第1章 初见",
+      "raw_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。"
+    },
+    {
+      "chapter_id": "ch_0002",
+      "book_id": "book_demo_zh",
+      "chapter_index": 2,
+      "title": "第2章 夜谈",
+      "raw_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。"
+    }
+  ],
+  "normalized_units": [
+    {
+      "book_id": "book_demo_zh",
+      "chapter_id": "ch_0001",
+      "chunk": {
+        "chunk_id": "ch_0001_ck_0001",
+        "chapter_id": "ch_0001",
+        "chunk_index": 1,
+        "text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+        "char_start": 0,
+        "char_end": 45
+      },
+      "language": "zh",
+      "sentences": [
+        "林晚站在城门前。",
+        "顾昭看着林晚，说她今晚不要独行。",
+        "守门内侍低声提醒林晚，顾昭已经等了很久。"
+      ],
+      "mentions": [
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "林晚站在",
+          "normalized_form": "林晚站在",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 0,
+          "span_end": 4
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0002",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "城门前",
+          "normalized_form": "城门前",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 4,
+          "span_end": 7
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0003",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "顾昭看着",
+          "normalized_form": "顾昭看着",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 8,
+          "span_end": 12
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0004",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "林晚",
+          "normalized_form": "林晚",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 12,
+          "span_end": 14
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0005",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "说她今晚",
+          "normalized_form": "说她今晚",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 15,
+          "span_end": 19
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0006",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "不要独行",
+          "normalized_form": "不要独行",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 19,
+          "span_end": 23
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0007",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "守门内侍",
+          "normalized_form": "守门内侍",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 25,
+          "span_end": 29
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0008",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "低声提醒",
+          "normalized_form": "低声提醒",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 29,
+          "span_end": 33
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0009",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "林晚",
+          "normalized_form": "林晚",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 33,
+          "span_end": 35
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0010",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "顾昭已经",
+          "normalized_form": "顾昭已经",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 36,
+          "span_end": 40
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0011",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "等了很久",
+          "normalized_form": "等了很久",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 40,
+          "span_end": 44
+        }
+      ],
+      "evidences": [
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0001",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，",
+          "span_start": 0,
+          "span_end": 4,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0001"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0002",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已",
+          "span_start": 4,
+          "span_end": 7,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0002"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0003",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久",
+          "span_start": 8,
+          "span_end": 12,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0003"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0004",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 12,
+          "span_end": 14,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0004"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0005",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 15,
+          "span_end": 19,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0005"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0006",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 19,
+          "span_end": 23,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0006"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0007",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 25,
+          "span_end": 29,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0007"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0008",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "林晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 29,
+          "span_end": 33,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0008"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0009",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "晚站在城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 33,
+          "span_end": 35,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0009"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0010",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "城门前。顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 36,
+          "span_end": 40,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0010"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0011",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "顾昭看着林晚，说她今晚不要独行。\n守门内侍低声提醒林晚，顾昭已经等了很久。",
+          "span_start": 40,
+          "span_end": 44,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0011"
+        }
+      ],
+      "adapter_name": "hanlp_fallback"
+    },
+    {
+      "book_id": "book_demo_zh",
+      "chapter_id": "ch_0002",
+      "chunk": {
+        "chunk_id": "ch_0002_ck_0001",
+        "chapter_id": "ch_0002",
+        "chunk_index": 1,
+        "text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+        "char_start": 0,
+        "char_end": 26
+      },
+      "language": "zh",
+      "sentences": [
+        "林晚与顾昭在灯下夜谈。",
+        "顾昭提到师父，也提到守门内侍。"
+      ],
+      "mentions": [
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0001",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "林晚与顾",
+          "normalized_form": "林晚与顾",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 0,
+          "span_end": 4
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "昭在灯下",
+          "normalized_form": "昭在灯下",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 4,
+          "span_end": 8
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0003",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "夜谈",
+          "normalized_form": "夜谈",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 8,
+          "span_end": 10
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0004",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "顾昭提到",
+          "normalized_form": "顾昭提到",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 11,
+          "span_end": 15
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0005",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "师父",
+          "normalized_form": "师父",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 15,
+          "span_end": 17
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0006",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "也提到守",
+          "normalized_form": "也提到守",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 18,
+          "span_end": 22
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0007",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "门内侍",
+          "normalized_form": "门内侍",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 22,
+          "span_end": 25
+        }
+      ],
+      "evidences": [
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0001",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 0,
+          "span_end": 4,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0001"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0002",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 4,
+          "span_end": 8,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0002"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0003",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 8,
+          "span_end": 10,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0003"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0004",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 11,
+          "span_end": 15,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0004"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0005",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 15,
+          "span_end": 17,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0005"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0006",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 18,
+          "span_end": 22,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0006"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0007",
+          "book_id": "book_demo_zh",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "林晚与顾昭在灯下夜谈。顾昭提到师父，也提到守门内侍。",
+          "span_start": 22,
+          "span_end": 25,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0007"
+        }
+      ],
+      "adapter_name": "hanlp_fallback"
+    }
+  ]
+}

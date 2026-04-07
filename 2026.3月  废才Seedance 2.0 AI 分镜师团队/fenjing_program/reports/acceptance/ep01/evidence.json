@@ -1,0 +1,120 @@
+{
+  "episode": "ep01",
+  "result": "FAIL",
+  "stage_statuses": {
+    "director": "accepted",
+    "design": "accepted",
+    "prompt": "accepted"
+  },
+  "checklist": [
+    {
+      "name": "director_markdown",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/01-director-analysis.md"
+    },
+    {
+      "name": "director_json",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/01-director-analysis.json"
+    },
+    {
+      "name": "design_validation",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/validation/design-validation.json"
+    },
+    {
+      "name": "prompt_markdown",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/02-seedance-prompts.md"
+    },
+    {
+      "name": "prompt_json",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/02-seedance-prompts.json"
+    },
+    {
+      "name": "prompt_validation",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/validation/prompt-validation.json"
+    },
+    {
+      "name": "director_validation",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/validation/director-validation.json"
+    },
+    {
+      "name": "reference_map",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/outputs/ep01/reference-map.json"
+    },
+    {
+      "name": "assessment_overview",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/assessments/ep01/overview.md"
+    },
+    {
+      "name": "review_director_summary",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/director/summary.json"
+    },
+    {
+      "name": "review_design_summary",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/design/summary.json"
+    },
+    {
+      "name": "review_prompt_summary",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/prompt/summary.json"
+    },
+    {
+      "name": "asset_registry",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/registry/asset-registry.json"
+    },
+    {
+      "name": "image_manifest",
+      "passed": true,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/manifests/image-generation-log.jsonl"
+    },
+    {
+      "name": "all_stages_accepted",
+      "passed": true,
+      "detail": "director=accepted, design=accepted, prompt=accepted"
+    },
+    {
+      "name": "reference_map_ready",
+      "passed": true,
+      "detail": "references=8, missing_assets=0"
+    },
+    {
+      "name": "golden_samples_present",
+      "passed": false,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/acceptance/ep01/golden"
+    },
+    {
+      "name": "variant_samples_present",
+      "passed": false,
+      "detail": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/acceptance/ep01/variants"
+    }
+  ],
+  "asset_summary": {
+    "episode_asset_count": 13,
+    "ready_asset_count": 8,
+    "variant_asset_count": 9,
+    "reference_count": 8,
+    "missing_reference_assets": []
+  },
+  "sample_summary": {
+    "golden_dir": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/acceptance/ep01/golden",
+    "golden_count": 0,
+    "golden_files": [],
+    "variant_dir": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/acceptance/ep01/variants",
+    "variant_count": 0,
+    "variant_files": []
+  },
+  "missing_items": [
+    "golden_samples_present",
+    "variant_samples_present"
+  ]
+}

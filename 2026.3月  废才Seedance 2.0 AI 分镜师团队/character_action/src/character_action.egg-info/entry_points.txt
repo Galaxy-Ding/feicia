@@ -1,0 +1,2 @@
+[console_scripts]
+character-action = character_action.cli:main

@@ -1,0 +1,16 @@
+project_root: .
+data:
+  raw_books: data/raw_books
+  normalized: data/normalized
+  exports: data/exports
+  logs: logs
+runtime:
+  sqlite_path: data/exports/character_action.sqlite3
+  chunk_size: 280
+  chunk_overlap: 40
+  evidence_window: 32
+  adapter_mode: auto
+  hanlp_model: OPEN_TOK_POS_NER_SRL_DEP_SDP_CON_ELECTRA_BASE_ZH
+  booknlp_model: small
+  booknlp_pipeline: entity,quote
+  native_temp_root: data/exports/native_runs

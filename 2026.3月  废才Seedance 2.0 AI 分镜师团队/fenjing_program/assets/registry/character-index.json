@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-27T11:22:06+08:00",
+  "characters": [
+    {
+      "asset_id": "char-ep01-63fcd104-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "name": "守门内侍",
+      "status": "READY_FOR_STORYBOARD",
+      "image_path": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_full_body_v1.png",
+      "reference_images": {
+        "back_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/back_full_body_v1.png",
+        "front_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_half_body_v1.png",
+        "side_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/side_full_body_v1.png",
+        "turn_back_pose": "assets/library/characters/char_u5b88u95e8u5185u4f8d/turn_back_pose_v1.png",
+        "weapon_hold_pose": "assets/library/characters/char_u5b88u95e8u5185u4f8d/weapon_hold_pose_v1.png"
+      }
+    },
+    {
+      "asset_id": "char-ep01-ecbeef36-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "name": "顾星澜",
+      "status": "READY_FOR_STORYBOARD",
+      "image_path": "assets/library/characters/char_u987eu661fu6f9c/front_full_body_v1.png",
+      "reference_images": {
+        "back_full_body": "assets/library/characters/char_u987eu661fu6f9c/back_full_body_v1.png",
+        "front_full_body": "assets/library/characters/char_u987eu661fu6f9c/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u987eu661fu6f9c/front_half_body_v1.png",
+        "side_full_body": "assets/library/characters/char_u987eu661fu6f9c/side_full_body_v1.png",
+        "turn_back_pose": "assets/library/characters/char_u987eu661fu6f9c/turn_back_pose_v1.png",
+        "weapon_hold_pose": "assets/library/characters/char_u987eu661fu6f9c/weapon_hold_pose_v1.png"
+      }
+    },
+    {
+      "asset_id": "char_u592au53f2u5c40u540cu50da-anchor-v1",
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "name": "太史局同僚",
+      "status": "READY_FOR_STORYBOARD",
+      "image_path": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_full_body_v1.png",
+      "reference_images": {
+        "front_full_body": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_half_body_v1.png"
+      }
+    }
+  ]
+}

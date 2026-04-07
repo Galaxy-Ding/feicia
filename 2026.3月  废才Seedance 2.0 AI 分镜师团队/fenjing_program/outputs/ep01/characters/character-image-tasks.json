@@ -1,0 +1,146 @@
+{
+  "book_id": "demo-book",
+  "episode_id": "ep01",
+  "tasks": [
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-front_full_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "front_full_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，角色辨识度高，浅灰道袍，旧布腰带，布靴，黑发，半束发，清瘦，冷静，旧剑，木牌，正面全身，垂直双手，站在原地，角色设定展示图，纯净背景，方便观察服饰轮廓",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-side_full_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "side_full_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，角色辨识度高，浅灰道袍，旧布腰带，布靴，黑发，半束发，清瘦，冷静，旧剑，木牌，侧身全身，站姿稳定，角色设定展示图，纯净背景，方便观察轮廓与层次",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-back_full_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "back_full_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，角色辨识度高，浅灰道袍，旧布腰带，布靴，黑发，半束发，清瘦，冷静，旧剑，木牌，背身全身，站姿稳定，角色设定展示图，纯净背景，方便观察后背服饰结构",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-front_half_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "front_half_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，角色辨识度高，浅灰道袍，旧布腰带，布靴，黑发，半束发，清瘦，冷静，旧剑，木牌，正面半身，表情克制，角色设定展示图，纯净背景，方便观察脸部与上身服饰",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-turn_back_pose-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "turn_back_pose",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，角色辨识度高，浅灰道袍，旧布腰带，布靴，黑发，半束发，清瘦，冷静，旧剑，木牌，回头姿态，身体轻微转动，角色设定展示图，纯净背景",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "weapon_hold_pose",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，角色辨识度高，浅灰道袍，旧布腰带，布靴，黑发，半束发，清瘦，冷静，旧剑，木牌，手持武器或法器，站姿稳定，角色设定展示图，纯净背景",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "front_full_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，正面全身，垂直双手，站在原地，角色设定展示图，纯净背景，方便观察服饰轮廓",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "side_full_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，侧身全身，站姿稳定，角色设定展示图，纯净背景，方便观察轮廓与层次",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "back_full_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，背身全身，站姿稳定，角色设定展示图，纯净背景，方便观察后背服饰结构",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "front_half_body",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，正面半身，表情克制，角色设定展示图，纯净背景，方便观察脸部与上身服饰",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "turn_back_pose",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，回头姿态，身体轻微转动，角色设定展示图，纯净背景",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "weapon_hold_pose",
+      "priority": "tier_a",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，手持武器或法器，站姿稳定，角色设定展示图，纯净背景",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1",
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "pose_type": "front_full_body",
+      "priority": "tier_b",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，正面全身，垂直双手，站在原地，角色设定展示图，纯净背景，方便观察服饰轮廓",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    },
+    {
+      "task_id": "ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1",
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "pose_type": "front_half_body",
+      "priority": "tier_b",
+      "prompt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，角色辨识度高，层次服饰，身份明确，布靴，黑发，整洁发型，轮廓清晰，身份明确，身份配件，正面半身，表情克制，角色设定展示图，纯净背景，方便观察脸部与上身服饰",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "style_preset": "seedance_character_anchor_v1",
+      "shots_reserved_for": []
+    }
+  ]
+}

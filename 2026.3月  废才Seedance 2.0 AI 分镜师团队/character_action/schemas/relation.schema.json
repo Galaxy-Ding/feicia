@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "relation_id",
+    "book_id",
+    "source_character_id",
+    "target_character_id",
+    "relation_type",
+    "direction",
+    "confidence"
+  ],
+  "properties": {
+    "relation_id": {"type": "string"},
+    "book_id": {"type": "string"},
+    "source_character_id": {"type": "string"},
+    "target_character_id": {"type": "string"},
+    "relation_type": {"type": "string"},
+    "direction": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0.0, "maximum": 1.0}
+  }
+}

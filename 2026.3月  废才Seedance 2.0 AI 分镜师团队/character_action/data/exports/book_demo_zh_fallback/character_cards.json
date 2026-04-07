@@ -1,0 +1,87 @@
+{
+  "run_id": "book_demo_zh_fallback-20260328063626",
+  "book": {
+    "book_id": "book_demo_zh_fallback",
+    "title": "Demo ZH Fallback",
+    "language": "zh",
+    "author": "",
+    "source_path": "data/raw_books/demo_zh.txt",
+    "chapter_count": 2
+  },
+  "characters": [
+    {
+      "character_id": "char_000001",
+      "book_id": "book_demo_zh_fallback",
+      "canonical_name": "守门内侍",
+      "aliases": [
+        "内侍"
+      ],
+      "roles": [
+        "内侍",
+        "官职"
+      ],
+      "summary": "城门处出现的内侍角色，多次以职衔指代；未见更具体姓名，保守作为单独人物簇保留。",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0004",
+        "ch_0002_ck_0001_ev_0005"
+      ],
+      "mention_count": 2,
+      "review_status": "auto_approved"
+    },
+    {
+      "character_id": "char_000002",
+      "book_id": "book_demo_zh_fallback",
+      "canonical_name": "师父",
+      "aliases": [],
+      "roles": [
+        "关系称谓"
+      ],
+      "summary": "仅以关系称谓出现，缺乏唯一身份信息，无法安全归并到具体人物。",
+      "confidence": 0.55,
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0004"
+      ],
+      "mention_count": 1,
+      "review_status": "pending"
+    },
+    {
+      "character_id": "char_000003",
+      "book_id": "book_demo_zh_fallback",
+      "canonical_name": "林晚",
+      "aliases": [],
+      "roles": [
+        "person"
+      ],
+      "summary": "书中明确出现的人物。",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0001",
+        "ch_0001_ck_0001_ev_0003",
+        "ch_0001_ck_0001_ev_0005",
+        "ch_0002_ck_0001_ev_0001"
+      ],
+      "mention_count": 4,
+      "review_status": "auto_approved"
+    },
+    {
+      "character_id": "char_000004",
+      "book_id": "book_demo_zh_fallback",
+      "canonical_name": "顾昭",
+      "aliases": [],
+      "roles": [
+        "person"
+      ],
+      "summary": "书中明确出现的人物。",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0002",
+        "ch_0001_ck_0001_ev_0006",
+        "ch_0002_ck_0001_ev_0002",
+        "ch_0002_ck_0001_ev_0003"
+      ],
+      "mention_count": 4,
+      "review_status": "auto_approved"
+    }
+  ]
+}

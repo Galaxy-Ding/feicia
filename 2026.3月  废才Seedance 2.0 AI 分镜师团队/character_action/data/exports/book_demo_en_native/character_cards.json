@@ -1,0 +1,127 @@
+{
+  "run_id": "book_demo_en_native-20260328014657",
+  "book": {
+    "book_id": "book_demo_en_native",
+    "title": "Demo EN Native",
+    "language": "en",
+    "author": "",
+    "source_path": "data/raw_books/demo_en.txt",
+    "chapter_count": 2
+  },
+  "characters": [
+    {
+      "character_id": "char_000001",
+      "book_id": "book_demo_en_native",
+      "canonical_name": "Alice Rowan",
+      "aliases": [
+        "Alice",
+        "Rowan"
+      ],
+      "roles": [
+        "person"
+      ],
+      "summary": "Detected from 3 mentions in normalized units.",
+      "confidence": 0.79,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0001",
+        "ch_0001_ck_0001_ev_0003",
+        "ch_0002_ck_0001_ev_0001"
+      ],
+      "mention_count": 3,
+      "review_status": "auto_approved"
+    },
+    {
+      "character_id": "char_000002",
+      "book_id": "book_demo_en_native",
+      "canonical_name": "Captain Nora",
+      "aliases": [
+        "Captain",
+        "Nora"
+      ],
+      "roles": [
+        "captain",
+        "person"
+      ],
+      "summary": "Detected from 1 mentions in normalized units. Inferred roles: captain.",
+      "confidence": 0.58,
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0004"
+      ],
+      "mention_count": 1,
+      "review_status": "pending"
+    },
+    {
+      "character_id": "char_000003",
+      "book_id": "book_demo_en_native",
+      "canonical_name": "her",
+      "aliases": [],
+      "roles": [
+        "person"
+      ],
+      "summary": "Detected from 1 mentions in normalized units.",
+      "confidence": 0.53,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0004"
+      ],
+      "mention_count": 1,
+      "review_status": "pending"
+    },
+    {
+      "character_id": "char_000004",
+      "book_id": "book_demo_en_native",
+      "canonical_name": "Marcus Vale",
+      "aliases": [
+        "Marcus",
+        "Vale"
+      ],
+      "roles": [
+        "person"
+      ],
+      "summary": "Detected from 3 mentions in normalized units.",
+      "confidence": 0.79,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0002",
+        "ch_0002_ck_0001_ev_0002",
+        "ch_0002_ck_0001_ev_0005"
+      ],
+      "mention_count": 3,
+      "review_status": "auto_approved"
+    },
+    {
+      "character_id": "char_000005",
+      "book_id": "book_demo_en_native",
+      "canonical_name": "she",
+      "aliases": [],
+      "roles": [
+        "person"
+      ],
+      "summary": "Detected from 1 mentions in normalized units.",
+      "confidence": 0.53,
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0006"
+      ],
+      "mention_count": 1,
+      "review_status": "pending"
+    },
+    {
+      "character_id": "char_000006",
+      "book_id": "book_demo_en_native",
+      "canonical_name": "the Captain",
+      "aliases": [
+        "Captain",
+        "the"
+      ],
+      "roles": [
+        "captain",
+        "person"
+      ],
+      "summary": "Detected from 1 mentions in normalized units. Inferred roles: captain.",
+      "confidence": 0.58,
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0003"
+      ],
+      "mention_count": 1,
+      "review_status": "pending"
+    }
+  ]
+}

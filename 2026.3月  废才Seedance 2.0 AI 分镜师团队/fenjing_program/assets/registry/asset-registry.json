@@ -1,0 +1,284 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-27T11:22:06+08:00",
+  "assets": [
+    {
+      "asset_id": "char-ep01-63fcd104-v1",
+      "asset_type": "character",
+      "name": "守门内侍",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "outputs/ep01/characters/character-sheets.md#守门内侍",
+      "prompt_text_path": "outputs/ep01/characters/character-sheets.md",
+      "image_path": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_full_body_v1.png",
+      "variant_of": null,
+      "tags": [
+        "tier_a",
+        "第一主配角",
+        "东方面孔",
+        "二十五岁上下",
+        "轮廓清晰"
+      ],
+      "source_version": 1,
+      "source_tool": "character-anchor",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "reference_images": {
+        "back_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/back_full_body_v1.png",
+        "front_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/front_half_body_v1.png",
+        "side_full_body": "assets/library/characters/char_u5b88u95e8u5185u4f8d/side_full_body_v1.png",
+        "turn_back_pose": "assets/library/characters/char_u5b88u95e8u5185u4f8d/turn_back_pose_v1.png",
+        "weapon_hold_pose": "assets/library/characters/char_u5b88u95e8u5185u4f8d/weapon_hold_pose_v1.png"
+      }
+    },
+    {
+      "asset_id": "char-ep01-ecbeef36-v1",
+      "asset_type": "character",
+      "name": "顾星澜",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "outputs/ep01/characters/character-sheets.md#顾星澜",
+      "prompt_text_path": "outputs/ep01/characters/character-sheets.md",
+      "image_path": "assets/library/characters/char_u987eu661fu6f9c/front_full_body_v1.png",
+      "variant_of": null,
+      "tags": [
+        "tier_a",
+        "主角",
+        "东方面孔",
+        "二十岁上下",
+        "清瘦修长"
+      ],
+      "source_version": 1,
+      "source_tool": "character-anchor",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "reference_images": {
+        "back_full_body": "assets/library/characters/char_u987eu661fu6f9c/back_full_body_v1.png",
+        "front_full_body": "assets/library/characters/char_u987eu661fu6f9c/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u987eu661fu6f9c/front_half_body_v1.png",
+        "side_full_body": "assets/library/characters/char_u987eu661fu6f9c/side_full_body_v1.png",
+        "turn_back_pose": "assets/library/characters/char_u987eu661fu6f9c/turn_back_pose_v1.png",
+        "weapon_hold_pose": "assets/library/characters/char_u987eu661fu6f9c/weapon_hold_pose_v1.png"
+      }
+    },
+    {
+      "asset_id": "char_u592au53f2u5c40u540cu50da-anchor-v1",
+      "asset_type": "character",
+      "name": "太史局同僚",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "outputs/ep01/characters/character-sheets.md#太史局同僚",
+      "prompt_text_path": "outputs/ep01/characters/character-sheets.md",
+      "image_path": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_full_body_v1.png",
+      "variant_of": null,
+      "tags": [
+        "tier_b",
+        "重要配角",
+        "东方面孔",
+        "二十五岁上下",
+        "轮廓清晰"
+      ],
+      "source_version": 1,
+      "source_tool": "character-anchor",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1",
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "reference_images": {
+        "front_full_body": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_full_body_v1.png",
+        "front_half_body": "assets/library/characters/char_u592au53f2u5c40u540cu50da/front_half_body_v1.png"
+      }
+    },
+    {
+      "asset_id": "scene-ep01-03ed85bc-v1",
+      "asset_type": "scene_panel",
+      "name": "沈钧白书房",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": "assets/library/scene-panels/scene-ep01-03ed85bc-v1.png",
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-3",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "scene-generator",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "沈钧白书房"
+    },
+    {
+      "asset_id": "scene-ep01-1c97ad3b-v1",
+      "asset_type": "scene_panel",
+      "name": "空白占位",
+      "episode_origin": "ep01",
+      "status": "IMAGE_PENDING",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": null,
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-9",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "prompt",
+      "updated_at": "2026-03-27T09:01:17+08:00",
+      "prompt_excerpt": "空白占位"
+    },
+    {
+      "asset_id": "scene-ep01-4993b7c8-v1",
+      "asset_type": "scene_panel",
+      "name": "太史局内院",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": "assets/library/scene-panels/scene-ep01-4993b7c8-v1.png",
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-2",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "scene-generator",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "太史局内院"
+    },
+    {
+      "asset_id": "scene-ep01-64fd9641-v1",
+      "asset_type": "scene_panel",
+      "name": "空白占位",
+      "episode_origin": "ep01",
+      "status": "IMAGE_PENDING",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": null,
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-6",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "prompt",
+      "updated_at": "2026-03-27T09:01:17+08:00",
+      "prompt_excerpt": "空白占位"
+    },
+    {
+      "asset_id": "scene-ep01-774d4836-v1",
+      "asset_type": "scene_panel",
+      "name": "顾星澜算房",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": "assets/library/scene-panels/scene-ep01-774d4836-v1.png",
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-4",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "scene-generator",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "顾星澜算房"
+    },
+    {
+      "asset_id": "scene-ep01-85eb39fb-v1",
+      "asset_type": "scene_panel",
+      "name": "司天台",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": "assets/library/scene-panels/scene-ep01-85eb39fb-v1.png",
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-1",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "scene-generator",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "司天台"
+    },
+    {
+      "asset_id": "scene-ep01-d10601fb-v1",
+      "asset_type": "scene_panel",
+      "name": "空白占位",
+      "episode_origin": "ep01",
+      "status": "IMAGE_PENDING",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": null,
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-7",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "prompt",
+      "updated_at": "2026-03-27T09:01:17+08:00",
+      "prompt_excerpt": "空白占位"
+    },
+    {
+      "asset_id": "scene-ep01-dc2a4d8f-v1",
+      "asset_type": "scene_panel",
+      "name": "空白占位",
+      "episode_origin": "ep01",
+      "status": "IMAGE_PENDING",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": null,
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-8",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "prompt",
+      "updated_at": "2026-03-27T09:01:17+08:00",
+      "prompt_excerpt": "空白占位"
+    },
+    {
+      "asset_id": "scene-ep01-f91efbb4-v1",
+      "asset_type": "scene_panel",
+      "name": "殿上奏对场景",
+      "episode_origin": "ep01",
+      "status": "READY_FOR_STORYBOARD",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": "assets/library/scene-panels/scene-ep01-f91efbb4-v1.png",
+      "variant_of": "scenegrid-ep01-5b07146d-v1",
+      "tags": [
+        "panel-5",
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "scene-generator",
+      "updated_at": "2026-03-27T11:22:06+08:00",
+      "prompt_excerpt": "殿上奏对场景"
+    },
+    {
+      "asset_id": "scenegrid-ep01-5b07146d-v1",
+      "asset_type": "scene_grid",
+      "name": "ep01 场景宫格",
+      "episode_origin": "ep01",
+      "status": "PROMPT_DRAFTED",
+      "prompt_entry_ref": "assets/scene-prompts.md#ep01 场景宫格",
+      "prompt_text_path": "assets/scene-prompts.md",
+      "image_path": null,
+      "variant_of": null,
+      "tags": [
+        "ep01 场景宫格"
+      ],
+      "source_version": 1,
+      "source_tool": "prompt",
+      "updated_at": "2026-03-27T09:01:17+08:00",
+      "prompt_excerpt": "# 场景道具提示词 ## ep01 场景宫格 请生成一张 **3×3 九宫格布局** 的电影场景环境图像。每个格子代表一个独立场景，所有格子必须保持视觉风格统一。前5格为有效场景，后4格留空，不生成任何额外场景。整体为架空古风世界的电影感写实风格，以环境叙事为主，不做人物主特写，不添加导演清单之外的新地点。 ### 视"
+    }
+  ]
+}

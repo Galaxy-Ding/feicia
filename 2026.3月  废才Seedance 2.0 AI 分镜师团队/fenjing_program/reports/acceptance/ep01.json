@@ -1,0 +1,130 @@
+{
+  "episode": "ep01",
+  "stages": {
+    "director": {
+      "status": "accepted",
+      "source": "manual",
+      "updated_at": "2026-03-27T08:54:36+08:00",
+      "summary": {
+        "episode": "ep01",
+        "stage": "director",
+        "round": 3,
+        "updated_at": "2026-03-27T08:53:55+08:00",
+        "business": {
+          "result": "FAIL",
+          "average_score": 7.5,
+          "has_item_below_6": false,
+          "dimension_scores": {
+            "fidelity": 7.0,
+            "visual_clarity": 9.0,
+            "action_executability": 8.0,
+            "camera_executability": 8.0,
+            "audio_design": 8.0,
+            "emotion_accuracy": 8.0
+          },
+          "issues": [
+            "对原文关键信息‘消息传至太史局时，顾星澜正在司天台校核春分节气时刻’保留较好，但将‘未及收拾算筹，便匆匆下台奔回局中’扩写为较完整的镜头运动后，未明确交代她的行动目标是‘奔回局中’，导致叙事指向略弱。；位置:P01；级别:high",
+            "原文中顾星澜先发现‘星澜亲启’与‘为师若有不测，此卷可证清白’，再读到税簿副本与减税、军饷缺口信息，之后才进一步注意页角墨点并破解暗号。现稿虽基本涵盖，但P03与P04之间的信息递进略有压缩，‘文稿—税簿副本—暗号’三层证据链的先后逻辑还可更清楚。；位置:P03-P04；级别:medium",
+            "原文强调内侍说‘沈大人待老奴不薄，这是老奴唯一能做的’，并提示‘摄政王势大’。现稿保留了未尽劝告与叹息，但弱化了‘沈大人待老奴不薄’这一人物动机，使内侍让步的情感依据不够明确。；位置:P05；级别:medium",
+            "原文有关键硬信息‘三月初三，师父被捕，定于初六午时问斩’。现稿只强化了‘今日初三’与‘仅余三日’，但遗漏了‘初六午时问斩’这一明确时限节点。该信息对后续‘必须在初六朝会前后布局’具有直接叙事功能。；位置:P06；级别:high",
+            "原文提出的谋局核心依赖两层逻辑：一是‘初六申时有日食，食甚在申正三刻’，二是‘摄政王每日申初离开政事堂，必须借大朝会祖制将其留殿至申正三刻’。现稿对这两点有覆盖，但未明确点出‘皇上未宣散，臣子不得擅离’这一祖制原理，导致‘时辰守门局’的成立条件略显跳步。；位置:P07；级别:high",
+            "人物清单未纳入庄恒之。虽然他本集未实际出场，但原文结尾已明确顾星澜想到‘父亲生前好友之子，如今在御史台任御史的庄恒之’，这是后续行动线的重要盟友人选，按‘预计后续集数复现的人物’标准，存在被遗漏的风险。；位置:人物清单；级别:medium",
+            "场景清单未单列‘政事堂/大朝会殿廷（计划目标场域）’，而P07的谋局已明确围绕朝会留殿机制展开。若后续分镜要承接这一集结尾的计划形成，缺少该目标场域定义可能影响服化道与后续提示词衔接。；位置:场景清单/元数据；级别:medium"
+          ],
+          "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/director/round-03-business.md"
+        },
+        "compliance": {
+          "result": "PASS",
+          "issues": [],
+          "violations": [],
+          "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/director/round-03-compliance.md"
+        },
+        "recommendation": "manual_reject_candidate"
+      },
+      "notes": "Accepted by manual operator command. assessment=/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/assessments/ep01/director.md"
+    },
+    "design": {
+      "status": "accepted",
+      "source": "manual",
+      "updated_at": "2026-03-27T09:02:15+08:00",
+      "summary": {
+        "episode": "ep01",
+        "stage": "design",
+        "round": 3,
+        "updated_at": "2026-03-27T09:01:17+08:00",
+        "business": {
+          "result": "FAIL",
+          "average_score": 7.8,
+          "has_item_below_6": false,
+          "dimension_scores": {
+            "fidelity": 9.0,
+            "visual_clarity": 8.0,
+            "action_executability": 8.0,
+            "camera_executability": 8.0,
+            "audio_design": 6.0,
+            "emotion_accuracy": 8.0
+          },
+          "issues": [
+            "时间态与导演清单存在轻微覆盖不足。导演清单中的算房场景需覆盖“夜至拂晓”的连续叙事功能，并承载P06-P08多个段落；当前宫格将算房严格收束为“拂晓前最后一段夜色中的算房”，虽然提升了出图稳定性，但会削弱该场景在后续焚纸、晨光渐入、拾珠收束等情境中的延展性，导致参考图对整集算房戏的适配面偏窄。；位置:场景道具提示词 > ep01 场景宫格 > 格4【顾星澜算房】；级别:medium",
+            "关键声源对应的视觉落点还不够系统，影响后续从参考图过渡到镜头执行时的联想效率。导演讲戏本高度依赖器物声、纸张声、算筹声、门轴声、烛火声等近景拟音，但当前场景提示词虽然已有器物摆放，却未把“可发声、可被镜头利用的物件位置”作为统一设计重点，容易导致生成图里道具存在但不够明确、不可一眼读出其可操作性。；位置:场景道具提示词 > ep01 场景宫格 > 全局视觉规范 / 格1【司天台】 / 格3【沈钧白书房】 / 格4【顾星澜算房】；级别:medium",
+            "人物职业识别非常准确，但‘行动利落、书卷气中带锋芒’中的“锋芒”主要通过神情与职业工具体现，身体动态倾向描述略少。若直接用于文生图，可能更偏静态文官感，少一点“会突然提裙疾走、快速搜寻、推理时高效执行”的机动性。；位置:人物提示词 > 顾星澜；级别:low",
+            "人物基础造型完成度高，但“长期在衙署当差的疲态”与“久在宫中之人留出的余地”的复杂感仍可再加强。当前更偏标准谨慎型内侍，人物层次略保守。；位置:人物提示词 > 守门内侍；级别:low",
+            "格5对“往事感”的处理说明较充分，但与导演讲戏本中的功能性闪回相比，仍略偏完整朝堂建立镜头，缺少‘群臣不敢作声、威压从高处压下’这种空气凝滞感的明确视觉代理。若生成结果过于标准朝堂空景，会削弱该格的戏剧指向性。；位置:场景道具提示词 > ep01 场景宫格 > 格5【殿上奏对场景】；级别:medium"
+          ],
+          "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/design/round-03-business.md"
+        },
+        "compliance": {
+          "result": "PASS",
+          "issues": [
+            "出现明确年龄“二十三岁”的描述，虽未涉及未成年人，但年龄表述过于具体时在部分平台审核中可能被额外关注。；位置:人物提示词 > 顾星澜；级别:low",
+            "包含“朝堂”“殿上奏对”等政治权力场景描述，但当前为架空古风世界、无现实政治映射，整体风险较低。；位置:场景道具提示词 > 格5 殿上奏对场景；级别:low"
+          ],
+          "violations": [],
+          "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/design/round-03-compliance.md"
+        },
+        "recommendation": "manual_reject_candidate"
+      },
+      "notes": "Accepted by manual operator command. assessment=/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/assessments/ep01/design.md"
+    },
+    "prompt": {
+      "status": "accepted",
+      "source": "manual",
+      "updated_at": "2026-03-27T13:59:54+08:00",
+      "summary": {
+        "episode": "ep01",
+        "stage": "prompt",
+        "round": 3,
+        "updated_at": "2026-03-27T13:32:10+08:00",
+        "business": {
+          "result": "FAIL",
+          "average_score": 7.9,
+          "has_item_below_6": false,
+          "dimension_scores": {
+            "fidelity": 8.0,
+            "visual_clarity": 8.0,
+            "action_executability": 8.0,
+            "camera_executability": 8.0,
+            "audio_design": 7.0,
+            "emotion_accuracy": 8.0
+          },
+          "issues": [
+            "P05 单条提示词同时引用了 @图片7（沈钧白书房）与 @图片6（太史局内院长廊）两个场景参考，但素材对应表未明确说明该条为跨空间连续镜头时各引用分别承担的具体用途，属于引用用途不够明确。按审核规范，每个 @引用都应标注明确用途，否则易导致 Seedance 对空间主次理解混乱。；位置:素材对应表 / P05；级别:high",
+            "导演讲戏要求‘门外忽然传来由远及近的脚步声，提醒她一炷香将尽’，随后她出门面对‘归来的内侍’。当前提示词写成“长廊尽头逼近的守门内侍刚好走回门前”，虽然基本符合，但将脚步来源过度具体绑定为同一位内侍，会弱化导演原文里先以时间压力制造悬念、再在门外落到人物的节奏设计。脑内预演时，Seedance 可能过早把注意力放在‘人走回来’而不是‘倒计时逼近’。；位置:P05；级别:medium",
+            "导演讲戏本标注为‘多镜头（3组）’，但当前提示词实际拆成了 4 个时间段/镜头组（0-2、2-6、6-10、10-15）。虽然生成上未必不可行，但与导演原始分组设计不一致，且第一小段“极轻转场建立回到算房”本质上是新增镜头。脑内预演时会造成节奏切分比导演预期更碎。；位置:P06；级别:medium",
+            "导演讲戏强调‘耳边像回响起师父那句“天时可测，人事可为”’，重点是心理回响与状态转折；当前提示词将其具体写为‘极轻、近似心念回响的一闪而过’，虽可执行，但已经接近明确语音素材指令。若生成处理过实，可能会把原本克制的内心活动做成明显画外音，破坏全篇少配乐、少人声的克制基调。；位置:P07；级别:medium",
+            "整体音频设计总体到位，但个别段落对声音有“无配乐或仅极弱低频”“绝不出现角色口播”等约束性表述，Seedance 友好度略受影响。审核规范中要求尽量采用叙事描述式、避免硬性否定句；此外，全片虽有环境音和动作音设计，但背景音乐风格层的统一描述仍偏弱，容易导致各条提示词在音轨气质上略显分散。；位置:整体音频设计；级别:medium"
+          ],
+          "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/prompt/round-03-business.md"
+        },
+        "compliance": {
+          "result": "PASS",
+          "issues": [],
+          "violations": [],
+          "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/prompt/round-03-compliance.md"
+        },
+        "recommendation": "manual_reject_candidate"
+      },
+      "notes": "Accepted by manual operator command. assessment=/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/assessments/ep01/prompt.md"
+    }
+  }
+}

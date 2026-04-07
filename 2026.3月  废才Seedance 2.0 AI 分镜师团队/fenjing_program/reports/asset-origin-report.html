@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>character-prompts.md / scene-prompts.md 生成来源报告</title>
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --paper: #fffdf8;
+      --ink: #1f2421;
+      --muted: #5d645d;
+      --line: #d8cfbf;
+      --accent: #8f3d2e;
+      --accent-2: #284b63;
+      --ok: #2d6a4f;
+      --warn: #a05a00;
+      --shadow: 0 14px 40px rgba(31, 36, 33, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Noto Serif SC", "Source Han Serif SC", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(143, 61, 46, 0.10), transparent 32%),
+        radial-gradient(circle at top right, rgba(40, 75, 99, 0.10), transparent 28%),
+        linear-gradient(180deg, #f7f3eb 0%, var(--bg) 100%);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 36px 20px 72px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(143, 61, 46, 0.96), rgba(40, 75, 99, 0.96));
+      color: #fff;
+      border-radius: 24px;
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -40px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+
+    h1, h2, h3 { margin: 0 0 12px; line-height: 1.25; }
+    h1 { font-size: 34px; letter-spacing: 0.02em; }
+    h2 {
+      font-size: 24px;
+      margin-top: 32px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    h3 { font-size: 18px; margin-top: 18px; }
+
+    p { margin: 0 0 12px; }
+
+    .lead {
+      max-width: 860px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.94);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .card strong {
+      color: var(--accent);
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .path, code {
+      font-family: "SFMono-Regular", "JetBrains Mono", "Consolas", monospace;
+      font-size: 13px;
+    }
+
+    .path {
+      display: block;
+      color: var(--accent-2);
+      word-break: break-all;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      background: #efe6d7;
+      color: #3c403a;
+      font-weight: 700;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    li { margin: 8px 0; }
+
+    .callout {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-left: 5px solid var(--accent);
+      background: #fff8f1;
+      border-radius: 14px;
+      border: 1px solid #ecd8c4;
+    }
+
+    .ok { color: var(--ok); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+    .small { color: var(--muted); font-size: 14px; }
+
+    .footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>这两个文件由哪个工程生成</h1>
+      <p class="lead">
+        结论：<code>fenjing_program</code> 工程生成了
+        <code>assets/character-prompts.md</code> 和 <code>assets/scene-prompts.md</code>。
+        它们不是独立手工文档，而是阶段二 <code>design</code> 流水线的产物，
+        由编排器调用模型生成，再拆分写回资产文件，并同步登记到资产注册表。
+      </p>
+      <div class="meta">
+        <span class="chip">工程名：Feicai Seedance 2.0 Local Runner</span>
+        <span class="chip">语言：Python 3.11+</span>
+        <span class="chip">接口：OpenAI-compatible Responses API</span>
+        <span class="chip">当前集数：ep01</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <article class="card">
+        <strong>目标文件 1</strong>
+        <span class="path">/home/galaxy/work/feicia/2026.3月 废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/character-prompts.md</span>
+        <p>内容带有 <code>&lt;!-- BEGIN CHARACTER:ep01 --&gt;</code> 区块标记，说明它是按集数块写入，而不是整文件一次性覆盖。</p>
+      </article>
+      <article class="card">
+        <strong>目标文件 2</strong>
+        <span class="path">/home/galaxy/work/feicia/2026.3月 废才Seedance 2.0 AI 分镜师团队/fenjing_program/assets/scene-prompts.md</span>
+        <p>内容带有 <code>&lt;!-- BEGIN SCENE:ep01 --&gt;</code> 区块标记，同样是阶段二拆分后写入的结果。</p>
+      </article>
+      <article class="card">
+        <strong>直接生成命令</strong>
+        <p><code>python3 -m feicai_seedance.cli design ep01</code></p>
+        <p>执行前要求导演阶段已经通过；执行后会写入两个资产文件并同步资产注册表。</p>
+      </article>
+      <article class="card">
+        <strong>实际运行证据</strong>
+        <p><span class="ok">2026-03-27 09:01:17 +08:00</span> 的运行日志记录了 <code>ART_DESIGN</code> 成功，并直接指向这两个文件。</p>
+      </article>
+    </div>
+
+    <section class="section">
+      <h2>1. 证据链</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>证据类型</th>
+            <th>结论</th>
+            <th>源码 / 记录</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>工程入口</td>
+            <td><code>README.md</code> 明确列出 <code>design [ep01]</code> 命令，并说明阶段二产出资产文件。</td>
+            <td><code>fenjing_program/README.md</code></td>
+          </tr>
+          <tr>
+            <td>实际写入逻辑</td>
+            <td><code>Pipeline.run_design()</code> 先生成阶段二 Markdown，再拆成人物块和场景块，分别写入两个目标文件。</td>
+            <td><code>src/feicai_seedance/pipeline.py</code></td>
+          </tr>
+          <tr>
+            <td>Prompt 组装逻辑</td>
+            <td>阶段二 prompt 由总控规则、<code>art-designer</code> 代理提示、<code>art-design-skill</code>、图像提示指南、示例和模板共同拼装。</td>
+            <td><code>src/feicai_seedance/prompt_builders.py</code><br><code>src/feicai_seedance/prompt_loader.py</code></td>
+          </tr>
+          <tr>
+            <td>运行记录</td>
+            <td>日志显示 <code>ART_DESIGN</code> 在 2026-03-27 09:01:17 成功输出这两个文件。</td>
+            <td><code>logs/run-log.jsonl</code></td>
+          </tr>
+          <tr>
+            <td>后续资产同步</td>
+            <td>阶段二不仅写 Markdown，还会同步生成 <code>asset-registry.json</code> 中的角色、场景宫格和场景拆图条目。</td>
+            <td><code>src/feicai_seedance/asset_registry.py</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>2. 直接答案</h2>
+      <div class="callout">
+        <p><strong>由哪个工程生成：</strong><code>fenjing_program</code>，包名是 <code>feicai-seedance</code>。</p>
+        <p><strong>如何生成：</strong>调用阶段二命令 <code>design ep01</code>，读取导演分析与已有资产，拼 prompt，调用模型生成完整阶段二 Markdown，然后拆分并写入 <code>character-prompts.md</code> 和 <code>scene-prompts.md</code>。</p>
+        <p><strong>目前使用的技术：</strong>Python CLI 编排器 + 文件系统驱动流程 + OpenAI-compatible LLM 客户端 + Responses API + 本地 Markdown Prompt/Skill/Template 体系 + JSON/Markdown 审核与资产注册。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3. 实际生成时间线</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>阶段</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-03-27 08:53:55</td>
+            <td>DIRECTOR_ANALYSIS</td>
+            <td>阶段一先生成 <code>outputs/ep01/01-director-analysis.md</code>，这是阶段二的上游输入。</td>
+          </tr>
+          <tr>
+            <td>2026-03-27 08:54:36</td>
+            <td>director accepted</td>
+            <td>导演阶段被人工放行，所以 <code>design ep01</code> 可以执行。</td>
+          </tr>
+          <tr>
+            <td>2026-03-27 09:01:17</td>
+            <td>ART_DESIGN</td>
+            <td>阶段二执行成功，生成并写入这两个资产文件。</td>
+          </tr>
+          <tr>
+            <td>2026-03-27 09:02:15</td>
+            <td>design accepted</td>
+            <td>虽然自动审核评分未过线，但该轮结果被人工接受，所以下游流程继续运行。</td>
+          </tr>
+          <tr>
+            <td>2026-03-27 13:32:10</td>
+            <td>STORYBOARD</td>
+            <td>下游分镜阶段已经消费这些资产文件和真实图片资产，生成 <code>02-seedance-prompts.md</code>。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>4. 生成过程</h2>
+      <h3>4.1 这两个文件的直接生成过程</h3>
+      <ol>
+        <li>读取剧本，先跑阶段一 <code>start ep01</code>，生成导演分析文件。</li>
+        <li>导演阶段必须先被接受，否则 <code>run_design()</code> 会直接报错阻断。</li>
+        <li>阶段二读取 <code>01-director-analysis.md</code>，同时读取历史 <code>character-prompts.md</code> 和 <code>scene-prompts.md</code> 作为增量上下文。</li>
+        <li>系统拼接阶段二 prompt：总控 <code>CLAUDE.md</code> + <code>art-designer</code> + <code>art-design-skill</code> + <code>gemini-image-prompt-guide</code> + 人物/场景示例 + 模板。</li>
+        <li>调用模型键 <code>art_designer</code> 生成一整份阶段二 Markdown，内容同时包含人物提示词和场景提示词。</li>
+        <li>程序先做业务审核和合规审核，必要时会自动回修，最多 3 轮。</li>
+        <li>最终结果通过 <code>split_art_design_artifact()</code> 拆成两部分。</li>
+        <li>程序用 <code>upsert_episode_block()</code> 写回 <code>assets/character-prompts.md</code> 和 <code>assets/scene-prompts.md</code>，按集数块追加或更新。</li>
+        <li>程序再调用 <code>sync_design_assets()</code>，把角色条目、场景宫格条目、场景 panel 条目同步进 <code>assets/registry/asset-registry.json</code>。</li>
+      </ol>
+
+      <h3>4.2 整个项目里的完整闭环</h3>
+      <ol>
+        <li>剧本分析：<code>start ep01</code> 产出导演讲戏本。</li>
+        <li>服化道设计：<code>design ep01</code> 产出本报告关注的两个 Markdown 资产文件。</li>
+        <li>角色资产链：<code>extract-characters</code> → <code>build-character-sheets</code> → <code>export-character-image-tasks</code> → <code>generate-character-images</code> → <code>review-character-images</code> → <code>approve-character-assets</code>。</li>
+        <li>场景资产链：<code>export-scene-image-tasks</code> → <code>generate-scene-images</code> → <code>review-scene-images</code> → <code>approve-scene-assets</code>。</li>
+        <li>引用映射：<code>build-reference-map</code> 基于导演 JSON 和 READY 资产生成引用表。</li>
+        <li>分镜阶段：<code>prompt ep01</code> 消费导演分析、资产库和引用映射，生成最终 Seedance 分镜提示词。</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>5. 当前技术栈</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>层</th>
+            <th>当前使用技术</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>编排层</td>
+            <td>Python CLI</td>
+            <td>入口是 <code>python3 -m feicai_seedance.cli ...</code>，核心编排在 <code>Pipeline</code>。</td>
+          </tr>
+          <tr>
+            <td>流程驱动</td>
+            <td>文件系统驱动</td>
+            <td>输入输出主要是 <code>script/</code>、<code>assets/</code>、<code>outputs/</code>、<code>reports/</code>、<code>logs/</code>。</td>
+          </tr>
+          <tr>
+            <td>Prompt 体系</td>
+            <td>Markdown Prompt / Skill / Template</td>
+            <td>运行时装载 <code>CLAUDE.md</code>、<code>agents/*.md</code>、<code>skills/**/*.md</code>、模板与示例。</td>
+          </tr>
+          <tr>
+            <td>模型网关</td>
+            <td>OpenAI-compatible API</td>
+            <td>统一路由到 <code>http://2000.run:6543</code>，使用 <code>responses</code> wire API。</td>
+          </tr>
+          <tr>
+            <td>模型配置</td>
+            <td><code>gpt-5.4</code> + provider 路由</td>
+            <td>阶段二 <code>art_designer</code> 当前配置为 <code>gpt-5.4</code>，provider 标记为 <code>claude</code>，温度 <code>0.6</code>，<code>max_tokens=12000</code>。</td>
+          </tr>
+          <tr>
+            <td>审核机制</td>
+            <td>业务审核 + 合规审核 + 自动回修</td>
+            <td>每阶段最多自动修 3 轮，不收敛时进入人工接受或返修。</td>
+          </tr>
+          <tr>
+            <td>资产管理</td>
+            <td>JSON Registry + 图片库目录</td>
+            <td>生成 prompt 后会同步 <code>asset-registry.json</code>，图片入库后再标记 READY。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>6. 这两个文件在系统中的角色</h2>
+      <div class="grid">
+        <article class="card">
+          <strong>character-prompts.md</strong>
+          <p>保存稳定角色资产的文生图提示词。当前 <code>ep01</code> 已写入顾星澜与守门内侍两个角色块。</p>
+        </article>
+        <article class="card">
+          <strong>scene-prompts.md</strong>
+          <p>保存场景宫格与场景拆解提示词。当前 <code>ep01</code> 是一张 3×3 九宫格，前 5 格有效、后 4 格留白。</p>
+        </article>
+        <article class="card">
+          <strong>它们不是最终图片</strong>
+          <p>这两个文件本质是“图像生成的文字资产层”，后续要经过导出任务、出图、审核、入库，才能变成可引用图片。</p>
+        </article>
+        <article class="card">
+          <strong>它们也不是最终分镜</strong>
+          <p>最终分镜是下游 <code>outputs/ep01/02-seedance-prompts.md</code>，它依赖这些资产和真实图片映射。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>7. 当前状态与注意点</h2>
+      <ul>
+        <li>阶段二这次自动审核并没有自行过线，业务评分是 <code>7.8/10</code>，建议是 <code>manual_reject_candidate</code>。</li>
+        <li>但该轮结果随后被人工接受，所以流程继续向下游分镜阶段推进。</li>
+        <li>这意味着“文件已经生成并已投入使用”与“自动审核给出改进意见”两件事同时成立，不冲突。</li>
+        <li>当前主要改进点集中在场景格 4 的时间态覆盖、关键声源可视化落点、人物动态执行感和格 5 的压迫感表达。</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>8. 关键源码位置</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>文件</th>
+            <th>关键点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>src/feicai_seedance/pipeline.py</code></td>
+            <td><code>run_design()</code> 负责读取上游、调用模型、审核、拆分写入两个 Markdown，并同步资产注册表。</td>
+          </tr>
+          <tr>
+            <td><code>src/feicai_seedance/prompt_builders.py</code></td>
+            <td><code>build_art_generation_prompt()</code> 定义了阶段二 prompt 由哪些文档拼起来。</td>
+          </tr>
+          <tr>
+            <td><code>src/feicai_seedance/prompt_loader.py</code></td>
+            <td>决定 prompt 资源从工程根目录还是 <code>0-origin_document</code> 回退目录加载。</td>
+          </tr>
+          <tr>
+            <td><code>src/feicai_seedance/llm_client.py</code></td>
+            <td>统一通过 OpenAI-compatible 客户端请求 <code>/responses</code> 或 <code>/chat/completions</code>。</td>
+          </tr>
+          <tr>
+            <td><code>src/feicai_seedance/asset_registry.py</code></td>
+            <td><code>sync_design_assets()</code> 将阶段二产物同步成可追踪资产条目。</td>
+          </tr>
+          <tr>
+            <td><code>src/feicai_seedance/scene_pipeline.py</code></td>
+            <td>后续会把 <code>scene-prompts.md</code> 里的 panel 内容转成场景出图任务。</td>
+          </tr>
+          <tr>
+            <td><code>src/feicai_seedance/character_pipeline.py</code></td>
+            <td>角色链路独立负责候选角色、角色设定页、出图任务、审核和入库。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>9. 一句话总结</h2>
+      <div class="callout">
+        <p>
+          <code>assets/character-prompts.md</code> 和 <code>assets/scene-prompts.md</code>
+          是 <code>fenjing_program</code> 在阶段二 <code>design</code> 中生成的“服化道提示词资产文件”。
+          它们由 Python 编排器调用 OpenAI-compatible 大模型生成，经过审核/回修后拆分写入，并进一步驱动后续图片资产与分镜提示词的生成。
+        </p>
+      </div>
+    </section>
+
+    <p class="footer">
+      本页依据当前工作区源码、配置、日志、审核报告和实际产物内容生成。生成时间：2026-03-27。
+    </p>
+  </div>
+</body>
+</html>

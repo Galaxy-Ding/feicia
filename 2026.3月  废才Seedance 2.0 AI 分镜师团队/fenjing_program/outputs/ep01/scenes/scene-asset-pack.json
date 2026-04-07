@@ -1,0 +1,41 @@
+{
+  "episode_id": "ep01",
+  "generated_at": "2026-03-27T11:22:06+08:00",
+  "scenes": [
+    {
+      "asset_id": "scene-ep01-85eb39fb-v1",
+      "scene_name": "司天台",
+      "panel_number": 1,
+      "image_path": "assets/library/scene-panels/scene-ep01-85eb39fb-v1.png",
+      "status": "READY_FOR_STORYBOARD"
+    },
+    {
+      "asset_id": "scene-ep01-4993b7c8-v1",
+      "scene_name": "太史局内院",
+      "panel_number": 2,
+      "image_path": "assets/library/scene-panels/scene-ep01-4993b7c8-v1.png",
+      "status": "READY_FOR_STORYBOARD"
+    },
+    {
+      "asset_id": "scene-ep01-03ed85bc-v1",
+      "scene_name": "沈钧白书房",
+      "panel_number": 3,
+      "image_path": "assets/library/scene-panels/scene-ep01-03ed85bc-v1.png",
+      "status": "READY_FOR_STORYBOARD"
+    },
+    {
+      "asset_id": "scene-ep01-774d4836-v1",
+      "scene_name": "顾星澜算房",
+      "panel_number": 4,
+      "image_path": "assets/library/scene-panels/scene-ep01-774d4836-v1.png",
+      "status": "READY_FOR_STORYBOARD"
+    },
+    {
+      "asset_id": "scene-ep01-f91efbb4-v1",
+      "scene_name": "殿上奏对场景",
+      "panel_number": 5,
+      "image_path": "assets/library/scene-panels/scene-ep01-f91efbb4-v1.png",
+      "status": "READY_FOR_STORYBOARD"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "run_id": "book_demo_en_native-20260328014657",
+  "book": {
+    "book_id": "book_demo_en_native",
+    "title": "Demo EN Native",
+    "language": "en",
+    "author": "",
+    "source_path": "data/raw_books/demo_en.txt",
+    "chapter_count": 2
+  },
+  "chapters": [
+    {
+      "chapter_id": "ch_0001",
+      "book_id": "book_demo_en_native",
+      "chapter_index": 1,
+      "title": "Chapter 1 Arrival",
+      "raw_text": "Alice Rowan reached the harbor at dusk. Marcus Vale greeted Alice Rowan and warned her to stay close."
+    },
+    {
+      "chapter_id": "ch_0002",
+      "book_id": "book_demo_en_native",
+      "chapter_index": 2,
+      "title": "Chapter 2 The Letter",
+      "raw_text": "\"Alice Rowan,\" Marcus Vale said, \"the Captain is waiting.\"\nCaptain Nora studied Marcus Vale before she answered."
+    }
+  ],
+  "normalized_units": [
+    {
+      "book_id": "book_demo_en_native",
+      "chapter_id": "ch_0001",
+      "chunk": {
+        "chunk_id": "ch_0001_ck_0001",
+        "chapter_id": "ch_0001",
+        "chunk_index": 1,
+        "text": "Alice Rowan reached the harbor at dusk. Marcus Vale greeted Alice Rowan and warned her to stay close.",
+        "char_start": 0,
+        "char_end": 101
+      },
+      "language": "en",
+      "sentences": [
+        "Alice Rowan reached the harbor at dusk.",
+        "Marcus Vale greeted Alice Rowan and warned her to stay close."
+      ],
+      "mentions": [
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "Alice Rowan",
+          "normalized_form": "alice rowan",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 0,
+          "span_end": 11
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0002",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "Marcus Vale",
+          "normalized_form": "marcus vale",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 40,
+          "span_end": 51
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0003",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "Alice Rowan",
+          "normalized_form": "alice rowan",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 60,
+          "span_end": 71
+        },
+        {
+          "mention_id": "ch_0001_ck_0001_mn_0004",
+          "chunk_id": "ch_0001_ck_0001",
+          "surface_form": "her",
+          "normalized_form": "her",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 83,
+          "span_end": 86
+        }
+      ],
+      "evidences": [
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0001",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "Alice Rowan reached the harbor at dusk. Mar",
+          "span_start": 0,
+          "span_end": 11,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0001"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0002",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "wan reached the harbor at dusk. Marcus Vale greeted Alice Rowan and warned",
+          "span_start": 40,
+          "span_end": 51,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0002"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0003",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "or at dusk. Marcus Vale greeted Alice Rowan and warned her to stay close.",
+          "span_start": 60,
+          "span_end": 71,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0003"
+        },
+        {
+          "evidence_id": "ch_0001_ck_0001_ev_0004",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0001",
+          "chunk_id": "ch_0001_ck_0001",
+          "quote_text": "greeted Alice Rowan and warned her to stay close.",
+          "span_start": 83,
+          "span_end": 86,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0001_ck_0001_mn_0004"
+        }
+      ],
+      "adapter_name": "booknlp_native:small"
+    },
+    {
+      "book_id": "book_demo_en_native",
+      "chapter_id": "ch_0002",
+      "chunk": {
+        "chunk_id": "ch_0002_ck_0001",
+        "chapter_id": "ch_0002",
+        "chunk_index": 1,
+        "text": "\"Alice Rowan,\" Marcus Vale said, \"the Captain is waiting.\"\nCaptain Nora studied Marcus Vale before she answered.",
+        "char_start": 0,
+        "char_end": 112
+      },
+      "language": "en",
+      "sentences": [
+        "\"Alice Rowan,\" Marcus Vale said, \"the Captain is waiting.",
+        "\" Captain Nora studied Marcus Vale before she answered."
+      ],
+      "mentions": [
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0001",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "Alice Rowan",
+          "normalized_form": "alice rowan",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 1,
+          "span_end": 12
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "Marcus Vale",
+          "normalized_form": "marcus vale",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 15,
+          "span_end": 26
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0003",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "the Captain",
+          "normalized_form": "the captain",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 34,
+          "span_end": 45
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0004",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "Captain Nora",
+          "normalized_form": "captain nora",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 59,
+          "span_end": 71
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0005",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "Marcus Vale",
+          "normalized_form": "marcus vale",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 80,
+          "span_end": 91
+        },
+        {
+          "mention_id": "ch_0002_ck_0001_mn_0006",
+          "chunk_id": "ch_0002_ck_0001",
+          "surface_form": "she",
+          "normalized_form": "she",
+          "entity_type": "person",
+          "speaker_hint": "",
+          "span_start": 99,
+          "span_end": 102
+        }
+      ],
+      "evidences": [
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0001",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "\"Alice Rowan,\" Marcus Vale said, \"the Captai",
+          "span_start": 1,
+          "span_end": 12,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0001"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0002",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "\"Alice Rowan,\" Marcus Vale said, \"the Captain is waiting.\"",
+          "span_start": 15,
+          "span_end": 26,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0002"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0003",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "lice Rowan,\" Marcus Vale said, \"the Captain is waiting.\"\nCaptain Nora studi",
+          "span_start": 34,
+          "span_end": 45,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0003"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0004",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "said, \"the Captain is waiting.\"\nCaptain Nora studied Marcus Vale before she",
+          "span_start": 59,
+          "span_end": 71,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0004"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0005",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "waiting.\"\nCaptain Nora studied Marcus Vale before she answered.",
+          "span_start": 80,
+          "span_end": 91,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0005"
+        },
+        {
+          "evidence_id": "ch_0002_ck_0001_ev_0006",
+          "book_id": "book_demo_en_native",
+          "chapter_id": "ch_0002",
+          "chunk_id": "ch_0002_ck_0001",
+          "quote_text": "Nora studied Marcus Vale before she answered.",
+          "span_start": 99,
+          "span_end": 102,
+          "linked_object_type": "mention",
+          "linked_object_id": "ch_0002_ck_0001_mn_0006"
+        }
+      ],
+      "adapter_name": "booknlp_native:small"
+    }
+  ]
+}

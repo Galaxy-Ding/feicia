@@ -1,0 +1,82 @@
+{
+  "episode_id": "ep01",
+  "browser": "mock",
+  "generated_at": "2026-03-27T11:22:06+08:00",
+  "tasks": [
+    {
+      "task_id": "ep01-scene-ep01-85eb39fb-v1",
+      "asset_id": "scene-ep01-85eb39fb-v1",
+      "scene_name": "司天台",
+      "panel_number": 1,
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/scenes/ep01/ep01-scene-ep01-85eb39fb-v1",
+      "image_dir": "downloads/images/scenes/ep01/ep01-scene-ep01-85eb39fb-v1",
+      "files": [
+        "downloads/images/scenes/ep01/ep01-scene-ep01-85eb39fb-v1/mock-001.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-85eb39fb-v1/mock-002.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-85eb39fb-v1/mock-003.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-85eb39fb-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-scene-ep01-4993b7c8-v1",
+      "asset_id": "scene-ep01-4993b7c8-v1",
+      "scene_name": "太史局内院",
+      "panel_number": 2,
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/scenes/ep01/ep01-scene-ep01-4993b7c8-v1",
+      "image_dir": "downloads/images/scenes/ep01/ep01-scene-ep01-4993b7c8-v1",
+      "files": [
+        "downloads/images/scenes/ep01/ep01-scene-ep01-4993b7c8-v1/mock-001.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-4993b7c8-v1/mock-002.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-4993b7c8-v1/mock-003.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-4993b7c8-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-scene-ep01-03ed85bc-v1",
+      "asset_id": "scene-ep01-03ed85bc-v1",
+      "scene_name": "沈钧白书房",
+      "panel_number": 3,
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/scenes/ep01/ep01-scene-ep01-03ed85bc-v1",
+      "image_dir": "downloads/images/scenes/ep01/ep01-scene-ep01-03ed85bc-v1",
+      "files": [
+        "downloads/images/scenes/ep01/ep01-scene-ep01-03ed85bc-v1/mock-001.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-03ed85bc-v1/mock-002.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-03ed85bc-v1/mock-003.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-03ed85bc-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-scene-ep01-774d4836-v1",
+      "asset_id": "scene-ep01-774d4836-v1",
+      "scene_name": "顾星澜算房",
+      "panel_number": 4,
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/scenes/ep01/ep01-scene-ep01-774d4836-v1",
+      "image_dir": "downloads/images/scenes/ep01/ep01-scene-ep01-774d4836-v1",
+      "files": [
+        "downloads/images/scenes/ep01/ep01-scene-ep01-774d4836-v1/mock-001.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-774d4836-v1/mock-002.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-774d4836-v1/mock-003.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-774d4836-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-scene-ep01-f91efbb4-v1",
+      "asset_id": "scene-ep01-f91efbb4-v1",
+      "scene_name": "殿上奏对场景",
+      "panel_number": 5,
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/scenes/ep01/ep01-scene-ep01-f91efbb4-v1",
+      "image_dir": "downloads/images/scenes/ep01/ep01-scene-ep01-f91efbb4-v1",
+      "files": [
+        "downloads/images/scenes/ep01/ep01-scene-ep01-f91efbb4-v1/mock-001.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-f91efbb4-v1/mock-002.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-f91efbb4-v1/mock-003.png",
+        "downloads/images/scenes/ep01/ep01-scene-ep01-f91efbb4-v1/mock-004.png"
+      ]
+    }
+  ]
+}

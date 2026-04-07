@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "finding_id",
+    "run_id",
+    "book_id",
+    "finding_type",
+    "severity",
+    "target_type",
+    "target_id",
+    "reason_codes",
+    "message",
+    "status"
+  ],
+  "properties": {
+    "finding_id": {"type": "string"},
+    "run_id": {"type": "string"},
+    "book_id": {"type": "string"},
+    "finding_type": {"type": "string"},
+    "severity": {"type": "string"},
+    "target_type": {"type": "string"},
+    "target_id": {"type": "string"},
+    "reason_codes": {"type": "array", "items": {"type": "string"}},
+    "message": {"type": "string"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string"}
+  }
+}

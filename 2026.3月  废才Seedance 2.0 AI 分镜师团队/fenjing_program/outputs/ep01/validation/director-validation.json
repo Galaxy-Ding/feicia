@@ -1,0 +1,61 @@
+{
+  "result": "FAIL",
+  "issues": [
+    {
+      "code": "DIRECTOR_LIGHT_SPECIFICITY_MISSING",
+      "location": "P01",
+      "message": "缺少具体光源、方向或色温描述。"
+    },
+    {
+      "code": "DIRECTOR_BEAT_DENSITY_OVERFLOW",
+      "location": "P01",
+      "message": "时长 8.0s 估算关键节拍 8 个，超过建议上限 2。"
+    },
+    {
+      "code": "DIRECTOR_LIGHT_SPECIFICITY_MISSING",
+      "location": "P02",
+      "message": "缺少具体光源、方向或色温描述。"
+    },
+    {
+      "code": "DIRECTOR_BEAT_DENSITY_OVERFLOW",
+      "location": "P03",
+      "message": "时长 15.0s 估算关键节拍 8 个，超过建议上限 5。"
+    },
+    {
+      "code": "DIRECTOR_LIGHT_SPECIFICITY_MISSING",
+      "location": "P04",
+      "message": "缺少具体光源、方向或色温描述。"
+    },
+    {
+      "code": "DIRECTOR_BEAT_DENSITY_OVERFLOW",
+      "location": "P04",
+      "message": "时长 15.0s 估算关键节拍 13 个，超过建议上限 5。"
+    },
+    {
+      "code": "DIRECTOR_LIGHT_SPECIFICITY_MISSING",
+      "location": "P05",
+      "message": "缺少具体光源、方向或色温描述。"
+    },
+    {
+      "code": "DIRECTOR_BEAT_DENSITY_OVERFLOW",
+      "location": "P05",
+      "message": "时长 8.0s 估算关键节拍 9 个，超过建议上限 2。"
+    },
+    {
+      "code": "DIRECTOR_BEAT_DENSITY_OVERFLOW",
+      "location": "P07",
+      "message": "时长 15.0s 估算关键节拍 12 个，超过建议上限 5。"
+    },
+    {
+      "code": "DIRECTOR_LIGHT_SPECIFICITY_MISSING",
+      "location": "P08",
+      "message": "缺少具体光源、方向或色温描述。"
+    }
+  ],
+  "summary": {
+    "plot_point_count": 8,
+    "character_count": 2,
+    "scene_count": 5
+  },
+  "updated_at": "2026-03-27T08:53:55+08:00"
+}

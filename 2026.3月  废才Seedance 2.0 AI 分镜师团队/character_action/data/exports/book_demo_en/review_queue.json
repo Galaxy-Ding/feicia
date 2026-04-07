@@ -1,0 +1,48 @@
+{
+  "run_id": "book_demo_en-20260328001823",
+  "book_id": "book_demo_en",
+  "tasks": [
+    {
+      "task_id": "review_000001",
+      "run_id": "book_demo_en-20260328001823",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000002",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "Captain"
+      }
+    },
+    {
+      "task_id": "review_000002",
+      "run_id": "book_demo_en-20260328001823",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000003",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "Captain Nora"
+      }
+    },
+    {
+      "task_id": "review_000003",
+      "run_id": "book_demo_en-20260328001823",
+      "task_type": "ambiguous_alias_merge",
+      "target_id": "Captain",
+      "reason_codes": [
+        "AMBIGUOUS_ALIAS"
+      ],
+      "status": "open",
+      "review_patch": {
+        "canonical_candidates": [
+          "captain",
+          "captain nora"
+        ]
+      }
+    }
+  ]
+}

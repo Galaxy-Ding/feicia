@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: character-action
+Version: 0.1.0
+Summary: Novel character extraction workspace for VideoOnlyOnce upstream preprocessing.
+Author: Codex
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML>=6.0
+
+# Character Action
+
+`character_action/` is the standalone upstream novel character extraction project.
+
+Position in the workspace:
+
+- `character_action`: novel text ingestion, chunking, normalized mentions, evidence spans, SQLite persistence
+- `video_only_once_phase1`: unified bridge and future scheduler
+- `fenjing_program`: downstream storyboard and character asset consumer
+
+Phase 02 scope implemented here:
+
+- project config and runtime preparation
+- chapter split and chunk rules
+- normalized text unit contracts
+- fallback `HanLP` and `BookNLP` style adapters
+- SQLite persistence and run audit log
+
+Phase 03 additions:
+
+- native-or-fallback adapter routing
+- `doctor` runtime dependency check
+- alias merge and `character_cards.json`
+- review queue generation and SQLite persistence
+- `video_only_once_phase1` bridge readiness
+
+Commands:
+
+```bash
+PYTHONPATH=src python3 -m character_action.cli prepare --project-root .
+PYTHONPATH=src python3 -m character_action.cli doctor --project-root .
+PYTHONPATH=src python3 -m character_action.cli preprocess-book --project-root . --book-id book_demo --title "Demo" --language zh --input data/raw_books/demo_zh.txt
+PYTHONPATH=src python3 -m character_action.cli extract-characters --project-root . --book-id book_demo
+PYTHONPATH=src python3 -m character_action.cli status --project-root . --book-id book_demo
+```
+
+Testing:
+
+```bash
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+```

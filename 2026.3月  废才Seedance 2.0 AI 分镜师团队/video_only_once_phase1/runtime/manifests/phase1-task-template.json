@@ -1,0 +1,10 @@
+{
+  "project_id": "video_only_once",
+  "book_id": "demo_en",
+  "episode_id": "ep01",
+  "phase": "phase01",
+  "stage": "integration",
+  "task_id": "phase01-ep01-integration",
+  "upstream": [],
+  "manual_checkpoints": 1
+}

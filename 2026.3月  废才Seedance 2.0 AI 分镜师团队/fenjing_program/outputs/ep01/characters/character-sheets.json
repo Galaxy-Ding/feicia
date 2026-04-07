@@ -1,0 +1,169 @@
+{
+  "book_id": "demo-book",
+  "episode_id": "ep01",
+  "style_preset": "seedance_character_anchor_v1",
+  "characters": [
+    {
+      "character_id": "char_u987eu661fu6f9c",
+      "name": "顾星澜",
+      "role_type": "主角",
+      "priority": "tier_a",
+      "status": "SHEET_READY",
+      "ethnicity_hint": "东方面孔",
+      "age_impression": "二十岁上下",
+      "body_type": "清瘦修长",
+      "temperament": [
+        "冷静",
+        "隐忍",
+        "警惕"
+      ],
+      "visual_keywords": [
+        "东方面孔",
+        "二十岁上下",
+        "清瘦修长",
+        "黑发",
+        "层次服饰",
+        "角色辨识度高"
+      ],
+      "costume_keywords": [
+        "浅灰道袍",
+        "旧布腰带",
+        "布靴"
+      ],
+      "hair_keywords": [
+        "黑发",
+        "半束发"
+      ],
+      "face_keywords": [
+        "清瘦",
+        "冷静",
+        "辨识度高"
+      ],
+      "accessories": [
+        "旧剑",
+        "木牌"
+      ],
+      "default_pose_set": [
+        "front_full_body",
+        "side_full_body",
+        "back_full_body",
+        "front_half_body"
+      ],
+      "optional_pose_set": [
+        "turn_back_pose",
+        "weapon_hold_pose"
+      ],
+      "default_prompt_base": "东方面孔角色设定，东方面孔，二十岁上下，清瘦修长，黑发，层次服饰，浅灰道袍，旧布腰带，旧剑，角色设定展示图，seedance_character_anchor_v1",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "source_refs": [
+        "ep01-script"
+      ],
+      "review_notes": []
+    },
+    {
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "name": "守门内侍",
+      "role_type": "第一主配角",
+      "priority": "tier_a",
+      "status": "SHEET_READY",
+      "ethnicity_hint": "东方面孔",
+      "age_impression": "二十五岁上下",
+      "body_type": "轮廓清晰",
+      "temperament": [
+        "稳定",
+        "克制"
+      ],
+      "visual_keywords": [
+        "东方面孔",
+        "二十五岁上下",
+        "轮廓清晰",
+        "黑发",
+        "层次服饰",
+        "角色辨识度高"
+      ],
+      "costume_keywords": [
+        "层次服饰",
+        "身份明确",
+        "布靴"
+      ],
+      "hair_keywords": [
+        "黑发",
+        "整洁发型"
+      ],
+      "face_keywords": [
+        "轮廓清晰",
+        "身份明确",
+        "辨识度高"
+      ],
+      "accessories": [
+        "身份配件"
+      ],
+      "default_pose_set": [
+        "front_full_body",
+        "side_full_body",
+        "back_full_body",
+        "front_half_body"
+      ],
+      "optional_pose_set": [
+        "turn_back_pose",
+        "weapon_hold_pose"
+      ],
+      "default_prompt_base": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "source_refs": [
+        "ep01-script"
+      ],
+      "review_notes": []
+    },
+    {
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "name": "太史局同僚",
+      "role_type": "重要配角",
+      "priority": "tier_b",
+      "status": "SHEET_READY",
+      "ethnicity_hint": "东方面孔",
+      "age_impression": "二十五岁上下",
+      "body_type": "轮廓清晰",
+      "temperament": [
+        "稳定",
+        "克制"
+      ],
+      "visual_keywords": [
+        "东方面孔",
+        "二十五岁上下",
+        "轮廓清晰",
+        "黑发",
+        "层次服饰",
+        "角色辨识度高"
+      ],
+      "costume_keywords": [
+        "层次服饰",
+        "身份明确",
+        "布靴"
+      ],
+      "hair_keywords": [
+        "黑发",
+        "整洁发型"
+      ],
+      "face_keywords": [
+        "轮廓清晰",
+        "身份明确",
+        "辨识度高"
+      ],
+      "accessories": [
+        "身份配件"
+      ],
+      "default_pose_set": [
+        "front_full_body",
+        "front_half_body"
+      ],
+      "optional_pose_set": [],
+      "default_prompt_base": "东方面孔角色设定，东方面孔，二十五岁上下，轮廓清晰，黑发，层次服饰，层次服饰，身份明确，身份配件，角色设定展示图，seedance_character_anchor_v1",
+      "negative_prompt": "多人，背景剧情画面，夸张透视，手部畸形，脚部畸形，现代西装，欧美甲胄，复杂背景，低清晰度",
+      "source_refs": [
+        "ep01-script"
+      ],
+      "review_notes": []
+    }
+  ]
+}

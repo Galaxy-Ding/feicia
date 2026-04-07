@@ -1,0 +1,45 @@
+{
+  "run_id": "book_demo_en_native-20260328014657",
+  "book": {
+    "book_id": "book_demo_en_native",
+    "title": "Demo EN Native",
+    "language": "en",
+    "author": "",
+    "source_path": "data/raw_books/demo_en.txt",
+    "chapter_count": 2
+  },
+  "relations": [
+    {
+      "relation_id": "rel_000001",
+      "book_id": "book_demo_en_native",
+      "source_character_id": "char_000001",
+      "target_character_id": "char_000004",
+      "relation_type": "dialogue",
+      "direction": "bidirectional",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ch_0001_ck_0001_ev_0002",
+        "ch_0001_ck_0001_ev_0003",
+        "ch_0002_ck_0001_ev_0001",
+        "ch_0002_ck_0001_ev_0002"
+      ],
+      "occurrence_count": 2,
+      "review_status": "auto_approved"
+    },
+    {
+      "relation_id": "rel_000002",
+      "book_id": "book_demo_en_native",
+      "source_character_id": "char_000004",
+      "target_character_id": "char_000006",
+      "relation_type": "superior_subordinate",
+      "direction": "bidirectional",
+      "confidence": 0.64,
+      "evidence_ids": [
+        "ch_0002_ck_0001_ev_0002",
+        "ch_0002_ck_0001_ev_0003"
+      ],
+      "occurrence_count": 1,
+      "review_status": "pending"
+    }
+  ]
+}

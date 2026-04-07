@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-03-27T11:22:06+08:00",
+  "scenes": [
+    {
+      "asset_id": "scene-ep01-03ed85bc-v1",
+      "name": "沈钧白书房",
+      "status": "READY_FOR_STORYBOARD",
+      "asset_type": "scene_panel",
+      "image_path": "assets/library/scene-panels/scene-ep01-03ed85bc-v1.png"
+    },
+    {
+      "asset_id": "scene-ep01-1c97ad3b-v1",
+      "name": "空白占位",
+      "status": "IMAGE_PENDING",
+      "asset_type": "scene_panel",
+      "image_path": null
+    },
+    {
+      "asset_id": "scene-ep01-4993b7c8-v1",
+      "name": "太史局内院",
+      "status": "READY_FOR_STORYBOARD",
+      "asset_type": "scene_panel",
+      "image_path": "assets/library/scene-panels/scene-ep01-4993b7c8-v1.png"
+    },
+    {
+      "asset_id": "scene-ep01-64fd9641-v1",
+      "name": "空白占位",
+      "status": "IMAGE_PENDING",
+      "asset_type": "scene_panel",
+      "image_path": null
+    },
+    {
+      "asset_id": "scene-ep01-774d4836-v1",
+      "name": "顾星澜算房",
+      "status": "READY_FOR_STORYBOARD",
+      "asset_type": "scene_panel",
+      "image_path": "assets/library/scene-panels/scene-ep01-774d4836-v1.png"
+    },
+    {
+      "asset_id": "scene-ep01-85eb39fb-v1",
+      "name": "司天台",
+      "status": "READY_FOR_STORYBOARD",
+      "asset_type": "scene_panel",
+      "image_path": "assets/library/scene-panels/scene-ep01-85eb39fb-v1.png"
+    },
+    {
+      "asset_id": "scene-ep01-d10601fb-v1",
+      "name": "空白占位",
+      "status": "IMAGE_PENDING",
+      "asset_type": "scene_panel",
+      "image_path": null
+    },
+    {
+      "asset_id": "scene-ep01-dc2a4d8f-v1",
+      "name": "空白占位",
+      "status": "IMAGE_PENDING",
+      "asset_type": "scene_panel",
+      "image_path": null
+    },
+    {
+      "asset_id": "scene-ep01-f91efbb4-v1",
+      "name": "殿上奏对场景",
+      "status": "READY_FOR_STORYBOARD",
+      "asset_type": "scene_panel",
+      "image_path": "assets/library/scene-panels/scene-ep01-f91efbb4-v1.png"
+    },
+    {
+      "asset_id": "scenegrid-ep01-5b07146d-v1",
+      "name": "ep01 场景宫格",
+      "status": "PROMPT_DRAFTED",
+      "asset_type": "scene_grid",
+      "image_path": null
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "issues": [],
+  "checks": {
+    "character_has_output_requirements": true,
+    "character_has_prompt": true,
+    "scene_has_visual_spec": true,
+    "scene_has_panel_breakdown": true,
+    "scene_has_declared_grid_spec": true,
+    "scene_has_panels": true,
+    "panel_count": 9,
+    "declared_grid_spec": "3x3"
+  },
+  "updated_at": "2026-03-27T09:01:17+08:00"
+}

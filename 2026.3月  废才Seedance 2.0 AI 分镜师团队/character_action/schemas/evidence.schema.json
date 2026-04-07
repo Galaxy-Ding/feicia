@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "book_id",
+    "chapter_id",
+    "chunk_id",
+    "quote_text",
+    "span_start",
+    "span_end",
+    "linked_object_type",
+    "linked_object_id"
+  ],
+  "properties": {
+    "evidence_id": {"type": "string"},
+    "book_id": {"type": "string"},
+    "chapter_id": {"type": "string"},
+    "chunk_id": {"type": "string"},
+    "quote_text": {"type": "string"},
+    "span_start": {"type": "integer", "minimum": 0},
+    "span_end": {"type": "integer", "minimum": 1},
+    "linked_object_type": {"type": "string"},
+    "linked_object_id": {"type": "string"}
+  }
+}

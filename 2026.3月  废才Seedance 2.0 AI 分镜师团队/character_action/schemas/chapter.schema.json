@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["chapter_id", "book_id", "chapter_index", "title", "raw_text"],
+  "properties": {
+    "chapter_id": {"type": "string"},
+    "book_id": {"type": "string"},
+    "chapter_index": {"type": "integer", "minimum": 1},
+    "title": {"type": "string"},
+    "raw_text": {"type": "string"}
+  }
+}

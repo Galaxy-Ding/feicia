@@ -1,0 +1,66 @@
+{
+  "project_id": "video_only_once",
+  "book_id": "demo_en",
+  "episode_id": "ep01",
+  "phase": "phase02",
+  "stage": "character_anchor",
+  "task_id": "phase02-ep01-character-anchor",
+  "upstream": [
+    "phase01-ep01-integration"
+  ],
+  "manual_checkpoints": 2,
+  "character_system": {
+    "root": "character_action",
+    "config": "character_action/configs/dev.yaml",
+    "raw_books_root": "character_action/data/raw_books",
+    "normalized_root": "character_action/data/normalized",
+    "exports_root": "character_action/data/exports",
+    "book_outputs": {
+      "normalized_json": "character_action/data/normalized/book_demo_en.json",
+      "character_cards": "character_action/data/exports/book_demo_en/character_cards.json",
+      "review_queue": "character_action/data/exports/book_demo_en/review_queue.json"
+    }
+  },
+  "knowledge_base": {
+    "root": "fenjing_program/project_data/knowledge_base",
+    "entities": {
+      "characters": "fenjing_program/project_data/knowledge_base/entities/characters.json"
+    },
+    "documents": {
+      "character_bible": "fenjing_program/project_data/knowledge_base/character_bible.md",
+      "visual_motifs": "fenjing_program/project_data/knowledge_base/visual_motifs.md"
+    },
+    "style_presets_root": "fenjing_program/project_data/style_presets"
+  },
+  "character_anchor": {
+    "output_root": "fenjing_program/outputs/ep01/characters",
+    "outputs": {
+      "candidate_list": "fenjing_program/outputs/ep01/characters/character-candidate-list.json",
+      "character_sheets_json": "fenjing_program/outputs/ep01/characters/character-sheets.json",
+      "character_sheets_md": "fenjing_program/outputs/ep01/characters/character-sheets.md",
+      "character_image_tasks": "fenjing_program/outputs/ep01/characters/character-image-tasks.json",
+      "character_image_run": "fenjing_program/outputs/ep01/characters/character-image-run.json",
+      "character_review_json": "fenjing_program/outputs/ep01/characters/character-review.json",
+      "character_review_md": "fenjing_program/outputs/ep01/characters/character-review.md",
+      "character_anchor_pack": "fenjing_program/outputs/ep01/characters/character-anchor-pack.json",
+      "character_reference_pack": "fenjing_program/outputs/ep01/characters/character-reference-pack.json"
+    }
+  },
+  "image_generation": {
+    "browser": "mock",
+    "task_manifest": "fenjing_program/outputs/ep01/characters/character-image-tasks.json",
+    "run_report": "fenjing_program/outputs/ep01/characters/character-image-run.json",
+    "staging_root": "zaomeng/downloads/staging/characters/ep01",
+    "images_root": "zaomeng/downloads/images/characters/ep01",
+    "zaomeng_config": "zaomeng/workflow/configs/project.json"
+  },
+  "registry_writeback": {
+    "asset_registry": "fenjing_program/assets/registry/asset-registry.json",
+    "character_index": "fenjing_program/assets/registry/character-index.json",
+    "scene_index": "fenjing_program/assets/registry/scene-index.json",
+    "image_generation_log": "fenjing_program/assets/manifests/image-generation-log.jsonl",
+    "reference_map": "fenjing_program/outputs/ep01/reference-map.json",
+    "anchor_pack": "fenjing_program/outputs/ep01/characters/character-anchor-pack.json",
+    "reference_pack": "fenjing_program/outputs/ep01/characters/character-reference-pack.json"
+  }
+}

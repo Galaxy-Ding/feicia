@@ -1,0 +1,297 @@
+{
+  "book_id": "demo-book",
+  "episode_id": "ep01",
+  "reviewed_at": "2026-03-27T11:22:06+08:00",
+  "characters": [
+    {
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "overall_status": "passed",
+      "pose_reviews": [
+        {
+          "task_id": "ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1",
+          "pose_type": "front_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.87,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1",
+          "pose_type": "front_half_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.87,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        }
+      ],
+      "manual_flags": [],
+      "ready_for_anchor": true
+    },
+    {
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "overall_status": "passed",
+      "pose_reviews": [
+        {
+          "task_id": "ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1",
+          "pose_type": "back_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1",
+          "pose_type": "front_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1",
+          "pose_type": "front_half_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1",
+          "pose_type": "side_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1",
+          "pose_type": "turn_back_pose",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1",
+          "pose_type": "weapon_hold_pose",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        }
+      ],
+      "manual_flags": [],
+      "ready_for_anchor": true
+    },
+    {
+      "character_id": "char_u987eu661fu6f9c",
+      "overall_status": "passed",
+      "pose_reviews": [
+        {
+          "task_id": "ep01-char_u987eu661fu6f9c-back_full_body-v1",
+          "pose_type": "back_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u987eu661fu6f9c-front_full_body-v1",
+          "pose_type": "front_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u987eu661fu6f9c-front_half_body-v1",
+          "pose_type": "front_half_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u987eu661fu6f9c-side_full_body-v1",
+          "pose_type": "side_full_body",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.95,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u987eu661fu6f9c-turn_back_pose-v1",
+          "pose_type": "turn_back_pose",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        },
+        {
+          "task_id": "ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1",
+          "pose_type": "weapon_hold_pose",
+          "selected_image": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1/best.png",
+          "scores": {
+            "face_consistency": 0.91,
+            "hair_consistency": 0.9,
+            "costume_consistency": 0.93,
+            "accessory_consistency": 0.89,
+            "species_ethnicity_match": 0.9,
+            "body_visibility": 0.9,
+            "pose_clarity": 0.94,
+            "style_match": 0.92,
+            "clean_background": 0.96,
+            "deformation_risk": 0.88
+          },
+          "decision": "pass",
+          "issues": []
+        }
+      ],
+      "manual_flags": [],
+      "ready_for_anchor": true
+    }
+  ]
+}

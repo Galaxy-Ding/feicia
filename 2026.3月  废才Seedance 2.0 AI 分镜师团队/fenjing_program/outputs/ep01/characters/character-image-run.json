@@ -1,0 +1,204 @@
+{
+  "book_id": "demo-book",
+  "episode_id": "ep01",
+  "browser": "mock",
+  "generated_at": "2026-03-27T11:22:06+08:00",
+  "tasks": [
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-front_full_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "front_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-side_full_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "side_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-side_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-back_full_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "back_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-back_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-front_half_body-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "front_half_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-front_half_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-turn_back_pose-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "turn_back_pose",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-turn_back_pose-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1",
+      "character_id": "char_u987eu661fu6f9c",
+      "pose_type": "weapon_hold_pose",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u987eu661fu6f9c-weapon_hold_pose-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "front_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "side_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-side_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "back_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-back_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "front_half_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-front_half_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "turn_back_pose",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-turn_back_pose-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1",
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "pose_type": "weapon_hold_pose",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u5b88u95e8u5185u4f8d-weapon_hold_pose-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1",
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "pose_type": "front_full_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_full_body-v1/mock-004.png"
+      ]
+    },
+    {
+      "task_id": "ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1",
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "pose_type": "front_half_body",
+      "status": "IMAGE_GENERATED",
+      "staging_dir": "downloads/staging/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1",
+      "image_dir": "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1",
+      "files": [
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1/mock-001.png",
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1/mock-002.png",
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1/mock-003.png",
+        "downloads/images/characters/ep01/ep01-char_u592au53f2u5c40u540cu50da-front_half_body-v1/mock-004.png"
+      ]
+    }
+  ]
+}

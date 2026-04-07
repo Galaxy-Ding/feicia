@@ -1,0 +1,34 @@
+{
+  "episode": "ep01",
+  "stage": "prompt",
+  "round": 3,
+  "updated_at": "2026-03-27T13:32:10+08:00",
+  "business": {
+    "result": "FAIL",
+    "average_score": 7.9,
+    "has_item_below_6": false,
+    "dimension_scores": {
+      "fidelity": 8.0,
+      "visual_clarity": 8.0,
+      "action_executability": 8.0,
+      "camera_executability": 8.0,
+      "audio_design": 7.0,
+      "emotion_accuracy": 8.0
+    },
+    "issues": [
+      "P05 单条提示词同时引用了 @图片7（沈钧白书房）与 @图片6（太史局内院长廊）两个场景参考，但素材对应表未明确说明该条为跨空间连续镜头时各引用分别承担的具体用途，属于引用用途不够明确。按审核规范，每个 @引用都应标注明确用途，否则易导致 Seedance 对空间主次理解混乱。；位置:素材对应表 / P05；级别:high",
+      "导演讲戏要求‘门外忽然传来由远及近的脚步声，提醒她一炷香将尽’，随后她出门面对‘归来的内侍’。当前提示词写成“长廊尽头逼近的守门内侍刚好走回门前”，虽然基本符合，但将脚步来源过度具体绑定为同一位内侍，会弱化导演原文里先以时间压力制造悬念、再在门外落到人物的节奏设计。脑内预演时，Seedance 可能过早把注意力放在‘人走回来’而不是‘倒计时逼近’。；位置:P05；级别:medium",
+      "导演讲戏本标注为‘多镜头（3组）’，但当前提示词实际拆成了 4 个时间段/镜头组（0-2、2-6、6-10、10-15）。虽然生成上未必不可行，但与导演原始分组设计不一致，且第一小段“极轻转场建立回到算房”本质上是新增镜头。脑内预演时会造成节奏切分比导演预期更碎。；位置:P06；级别:medium",
+      "导演讲戏强调‘耳边像回响起师父那句“天时可测，人事可为”’，重点是心理回响与状态转折；当前提示词将其具体写为‘极轻、近似心念回响的一闪而过’，虽可执行，但已经接近明确语音素材指令。若生成处理过实，可能会把原本克制的内心活动做成明显画外音，破坏全篇少配乐、少人声的克制基调。；位置:P07；级别:medium",
+      "整体音频设计总体到位，但个别段落对声音有“无配乐或仅极弱低频”“绝不出现角色口播”等约束性表述，Seedance 友好度略受影响。审核规范中要求尽量采用叙事描述式、避免硬性否定句；此外，全片虽有环境音和动作音设计，但背景音乐风格层的统一描述仍偏弱，容易导致各条提示词在音轨气质上略显分散。；位置:整体音频设计；级别:medium"
+    ],
+    "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/prompt/round-03-business.md"
+  },
+  "compliance": {
+    "result": "PASS",
+    "issues": [],
+    "violations": [],
+    "report_path": "/home/galaxy/work/feicia/2026.3月  废才Seedance 2.0 AI 分镜师团队/fenjing_program/reports/reviews/ep01/prompt/round-03-compliance.md"
+  },
+  "recommendation": "manual_reject_candidate"
+}

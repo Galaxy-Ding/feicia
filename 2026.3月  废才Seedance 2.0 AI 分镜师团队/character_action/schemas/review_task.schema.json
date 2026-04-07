@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["task_id", "run_id", "task_type", "target_id", "reason_codes", "status", "review_patch"],
+  "properties": {
+    "task_id": {"type": "string"},
+    "run_id": {"type": "string"},
+    "task_type": {"type": "string"},
+    "target_id": {"type": "string"},
+    "reason_codes": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string"},
+    "review_patch": {"type": "object"}
+  }
+}

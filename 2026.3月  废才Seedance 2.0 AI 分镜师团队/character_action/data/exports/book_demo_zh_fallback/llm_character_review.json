@@ -1,0 +1,58 @@
+{
+  "run_id": "book_demo_zh_fallback-20260328063626",
+  "book_id": "book_demo_zh_fallback",
+  "reviewer_provider": "claude",
+  "reviewer_model": "gpt-5.4",
+  "payload": {
+    "characters": [
+      {
+        "canonical_name": "林晚",
+        "aliases": [],
+        "roles": [],
+        "evidence_surfaces": [
+          "林晚"
+        ],
+        "summary": "书中明确出现的人物。",
+        "confidence": 0.99
+      },
+      {
+        "canonical_name": "顾昭",
+        "aliases": [],
+        "roles": [],
+        "evidence_surfaces": [
+          "顾昭"
+        ],
+        "summary": "书中明确出现的人物。",
+        "confidence": 0.99
+      },
+      {
+        "canonical_name": "守门内侍",
+        "aliases": [
+          "内侍"
+        ],
+        "roles": [
+          "内侍",
+          "官职"
+        ],
+        "evidence_surfaces": [
+          "守门内侍",
+          "内侍"
+        ],
+        "summary": "城门处出现的内侍角色，多次以职衔指代；未见更具体姓名，保守作为单独人物簇保留。",
+        "confidence": 0.87
+      },
+      {
+        "canonical_name": "师父",
+        "aliases": [],
+        "roles": [
+          "关系称谓"
+        ],
+        "evidence_surfaces": [
+          "师父"
+        ],
+        "summary": "仅以关系称谓出现，缺乏唯一身份信息，无法安全归并到具体人物。",
+        "confidence": 0.55
+      }
+    ]
+  }
+}

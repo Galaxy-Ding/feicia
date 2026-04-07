@@ -1,0 +1,74 @@
+{
+  "run_id": "book_demo_en_native-20260328014657",
+  "book_id": "book_demo_en_native",
+  "tasks": [
+    {
+      "task_id": "review_000001",
+      "run_id": "book_demo_en_native-20260328014657",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000002",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "Captain Nora"
+      }
+    },
+    {
+      "task_id": "review_000002",
+      "run_id": "book_demo_en_native-20260328014657",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000003",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "her"
+      }
+    },
+    {
+      "task_id": "review_000003",
+      "run_id": "book_demo_en_native-20260328014657",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000005",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "she"
+      }
+    },
+    {
+      "task_id": "review_000004",
+      "run_id": "book_demo_en_native-20260328014657",
+      "task_type": "low_confidence_character",
+      "target_id": "char_000006",
+      "reason_codes": [
+        "LOW_CONFIDENCE"
+      ],
+      "status": "open",
+      "review_patch": {
+        "suggested_canonical_name": "the Captain"
+      }
+    },
+    {
+      "task_id": "review_000005",
+      "run_id": "book_demo_en_native-20260328014657",
+      "task_type": "ambiguous_alias_merge",
+      "target_id": "Captain",
+      "reason_codes": [
+        "AMBIGUOUS_ALIAS"
+      ],
+      "status": "open",
+      "review_patch": {
+        "canonical_candidates": [
+          "captain nora",
+          "the captain"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["book_id", "title", "language", "source_path", "chapter_count"],
+  "properties": {
+    "book_id": {"type": "string"},
+    "title": {"type": "string"},
+    "language": {"enum": ["zh", "en"]},
+    "author": {"type": "string"},
+    "source_path": {"type": "string"},
+    "chapter_count": {"type": "integer", "minimum": 1}
+  }
+}

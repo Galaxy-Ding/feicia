@@ -1,0 +1,50 @@
+{
+  "result": "FAIL",
+  "issues": [
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P01",
+      "message": "时长 8.0s 估算关键节拍 7 个，超过建议上限 2。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P02",
+      "message": "时长 10.0s 估算关键节拍 7 个，超过建议上限 3。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P03",
+      "message": "时长 15.0s 估算关键节拍 8 个，超过建议上限 5。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P04",
+      "message": "时长 15.0s 估算关键节拍 13 个，超过建议上限 5。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P05",
+      "message": "时长 8.0s 估算关键节拍 12 个，超过建议上限 2。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P06",
+      "message": "时长 15.0s 估算关键节拍 8 个，超过建议上限 5。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P07",
+      "message": "时长 15.0s 估算关键节拍 12 个，超过建议上限 5。"
+    },
+    {
+      "code": "SEEDANCE_BEAT_DENSITY_OVERFLOW",
+      "location": "P08",
+      "message": "时长 10.0s 估算关键节拍 5 个，超过建议上限 3。"
+    }
+  ],
+  "summary": {
+    "prompt_count": 8,
+    "reference_count": 7
+  },
+  "updated_at": "2026-03-27T13:32:10+08:00"
+}

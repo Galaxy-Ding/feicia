@@ -1,0 +1,42 @@
+{
+  "book_id": "demo-book",
+  "episode_id": "ep01",
+  "generated_at": "2026-03-27T11:22:06+08:00",
+  "characters": [
+    {
+      "character_id": "char_u987eu661fu6f9c",
+      "name": "顾星澜",
+      "role_type": "主角",
+      "priority": "tier_a",
+      "source_chapters": [],
+      "source_episode": "ep01",
+      "confidence": 0.94
+    },
+    {
+      "character_id": "char_u5b88u95e8u5185u4f8d",
+      "name": "守门内侍",
+      "role_type": "第一主配角",
+      "priority": "tier_a",
+      "source_chapters": [],
+      "source_episode": "ep01",
+      "confidence": 0.94
+    },
+    {
+      "character_id": "char_u592au53f2u5c40u540cu50da",
+      "name": "太史局同僚",
+      "role_type": "重要配角",
+      "priority": "tier_b",
+      "source_chapters": [],
+      "source_episode": "ep01",
+      "confidence": 0.92
+    }
+  ],
+  "templates": [
+    {
+      "template_id": "tmpl_sect_disciple_male",
+      "name": "宗门男弟子模板",
+      "priority": "tier_b",
+      "usage_reason": "群演高频"
+    }
+  ]
+}
